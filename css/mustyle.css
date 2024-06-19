@@ -23,3 +23,21 @@
         display: block;
     }
 }
+
+.whatsapp-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    background-color: green;
+    cursor: pointer;
+}
+.whatsapp-button img{
+    height: 1.8rem;
+}

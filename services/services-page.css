@@ -1,0 +1,55 @@
+.head-img{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/finance-1.jpg');
+}
+.head-img h1{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.service-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.service-content .heading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.service-content h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.service-content ul{
+    padding: 1rem;
+}
+.service-content ul li{
+    list-style-type: disc;
+}
+
+
+@media(max-width:700px){
+    .head-img h1{
+        font-size: 1.2rem;
+    }
+    .service-content div{
+        width: 92%;
+    }
+}
