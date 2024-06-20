@@ -41,3 +41,49 @@
 .whatsapp-button img{
     height: 1.8rem;
 }
+
+.news-box p{
+    margin-bottom: 1.2rem;
+}
+.read-more-button{
+    font-size: 14px;
+    background-color: #234762;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: all ease-in-out .25s;
+}
+.read-more-button:hover{
+    background-color: #234762e1;
+    color: #fff;
+    border: 1px solid #000;
+    transition: all ease-in-out .25s;
+}
+
+.all-blogs-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-blogs-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 50px;
+    background-color: #234762;
+    border: 1px solid #000;
+    transition: all ease-in-out .25s;
+}
+.all-blogs-button a:hover{
+    background-color: #234762e1;
+    color: #fff;
+    border: 1px solid #000;
+    transition: all ease-in-out .25s;
+}
+.all-blogs-button a i{
+    margin-left: 12px;
+}
