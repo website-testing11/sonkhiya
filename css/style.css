@@ -114,7 +114,7 @@ a, a:focus, a:hover{outline:none; text-decoration:none;}
 .hm-services h2 span{position: relative; display: inline-block; color:#8eba3c; padding: 5px 15px;}
 .hm-services h2 span:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 4px; background-color:#8eba3c; opacity: 0.15;}
 .hm-services .item{display: -webkit-box; position:relative; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;  justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
-.hm-services .item .card {position: relative; z-index: 1; width: 100%; padding:30px; border-radius: 10px; border: none; background-color:#fff; -webkit-transition: all .4s ease-out 0s; -o-transition: all .4s ease-out 0s; -moz-transition: all .4s ease-out 0s; transition: all .4s ease-out 0s; margin-bottom: 30px; cursor: pointer;}
+.hm-services .item .card {position: relative; z-index: 1; width: 100%; padding:30px; border-radius: 10px; border: none; background-color:#fff; -webkit-transition: all .4s ease-out 0s; -o-transition: all .4s ease-out 0s; -moz-transition: all .4s ease-out 0s; transition: all .4s ease-out 0s; margin-bottom: 30px; cursor: pointer;height: 15rem;}
 .hm-services .item .card img{width:48px; height:48px;margin-bottom: 14px;}
 .hm-services .item h4{font-size: 20px; font-weight: 500; line-height: 1.2; color:#234762;}
 .hm-services .item .card p {margin: 0 0 10px; line-height: 1.5; text-align: justify;}

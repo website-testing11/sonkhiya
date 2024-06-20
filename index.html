@@ -22,7 +22,6 @@
   <script src="./js/jquery.min.js" type="text/javascript"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
  <script> 
@@ -32,7 +31,9 @@ $(function(){
 </script> 
 <div class="top-header-fixed" id="header-top-fixed"></div>
 <div class="whatsapp-button">
-  <img src="./images/whatsapp-icon.png" alt="">
+  <a href="https://api.whatsapp.com/send?phone=9057959386"> 
+    <img src="./images/whatsapp-icon.png" alt="">
+  </a>
 </div>
 <header class="header" id="header">
   <nav class="navbar navbar-expand-md navbar-light">
@@ -52,16 +53,17 @@ $(function(){
           </li>
           <li class="dropdown"><a href="#">Services</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Auditing and Assurance</a></li>
-              <li><a href="#">Tax Advisory</a></li>
-              <li><a href="#">Business Accounting</a></li>
-              <li><a href="#">Finance</a></li>
-              <li><a href="#">Valuation Services</a></li>
-              <li><a href="#">Forensic Audit</a></li>
-              <li><a href="#">Management Consultancy & Startup Advisory</a></li>
-              <li><a href="#">Company Law</a></li>
-              <li><a href="#">Real Estate (RERA) Services</a></li>
-              <li><a href="#">Corporate Insolvency</a></li>
+              <li><a href="./services/income-tax.html">Income Tax</a></li>
+              <li><a href="./services/gst-page.html">GST</a></li>
+              <li><a href="./services/corporate-services.html">Corporate Services</a></li>
+              <li><a href="./services/audit-page.html">Audit</a></li>
+              <li><a href="./services/corporate-finance.html">Corporate Finance</a></li>
+              <li><a href="./services/non-residents.html">Services for Non-Residents</a></li>
+              <li><a href="./services/accounting-page.html">Accounting Services</a></li>
+              <li><a href="./services/payroll-page.html">Payroll</a></li>
+              <li><a href="./services/outsourcing-page.html">Benifits of Outsourcing</a></li>
+              <li><a href="./services/tds-page.html">TDS</a></li>
+              <li><a href="./services/coroprate-governance-page.html">Corporate Governance</a></li>
             </ul>
           </li>
           
@@ -217,70 +219,98 @@ $(function(){
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-center item">
             <div class="row justify-content-center items">
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-1.png" alt="">
-                  <h4>Auditing and Assurance</h4>
-                  <p>Auditing and assurance services provide independent and objective assessments of an organization's financial statements</p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-2.png" alt="">
-                  <h4>Tax Advisory</h4>
-                  <p>Tax advisory services play a crucial role in assisting individuals and businesses in navigating complex tax laws and regulations. </p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-3.png" alt="">
-                  <h4>Business Accounting</h4>
-                  <p>Business accounting services encompass a range of financial services designed to assist businesses in managing their financial </p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-4.png" alt="">
-                  <h4>Finance</h4>
-                  <p>Finance services aim to assist individuals, businesses, and organizations in managing their financial resources, making informed</p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-5.png" alt="">
-                  <h4>Valuation Services</h4>
-                  <p>Valuation services are essential in a variety of contexts, such as mergers and acquisitions, financial reporting, tax planning</p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-6.png" alt="">
-                  <h4>Forensic Audit</h4>
-                  <p>Forensic audit services are crucial in uncovering financial fraud, supporting legal proceedings, and assisting organizations </p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
+              <a style="color: #888;" href="./services/income-tax.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-1.png" alt="">
+                    <h4>Income Tax</h4>
+                    <p>Income Tax is a mandatory levy imposed by governments on individuals and entities based on their earnings and profits.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/gst-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-2.png" alt="">
+                    <h4>GST</h4>
+                    <p>GST (Goods and Services Tax) is a unified tax on goods and services to simplify taxation and business operations.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/corporate-services.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-3.png" alt="">
+                    <h4>Corporate Services</h4>
+                    <p>Corporate services provide essential support to businesses, including legal, financial, and administrative solutions.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/audit-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-6.png" alt="">
+                    <h4>Audit</h4>
+                    <p>Audit involves independent examination and verification of financial records to ensure accuracy and compliance with regulations.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/corporate-finance.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-5.png" alt="">
+                    <h4>Corporate Finance</h4>
+                    <p>Corporate finance manages company financial decisions like investments and capital structure.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/non-residents.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-4.png" alt="">
+                    <h4>Services for Non-resisdents</h4>
+                    <p>Services for non-residents cater to the needs of individuals or businesses operating outside their home country. </p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="swiper-slide slide-center item">
             <div class="row justify-content-center items">
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-7.png" alt="">
-                  <h4>Management Consultancy & Startup Advisory</h4>
-                  <p>Management consultancy services refer to professional assistance provided to organizations, aiming to improve their overall </p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-8.png" alt="">
-                  <h4>Company Law</h4>
-                  <p>Company Law services cover a wide range of legal aspects related to the establishment, operation, compliance, and governance</p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-9.png" alt="">
-                  <h4>Real Estate (RERA) Services</h4>
-                  <p>We provide professional assistance in relation to the Real Estate (Regulation and Development) Act, 2016 (RERA) in India. These </p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card"><img src="images/serv-10.png" alt="">
-                  <h4>Corporate Insolvency</h4>
-                  <p>Corporate insolvency services in India have gained significant importance with the implementation of the IBC. These services play</p>
-                  <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
-              </div>
+              <a style="color: #888;" href="./services/accounting-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-7.png" alt="">
+                    <h4>Accounting Services</h4>
+                    <p>Accounting services handle financial record-keeping and reporting for businesses</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/payroll-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-8.png" alt="">
+                    <h4>Payroll</h4>
+                    <p>Payroll manages employee wages, benefits, and deductions within an organization.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/outsourcing-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-9.png" alt="">
+                    <h4>Benifits of Outsouncing</h4>
+                    <p>Benefits of outsourcing include cost savings, access to specialized expertise, and increased operational efficiency.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/tds-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-10.png" alt="">
+                    <h4>TDS</h4>
+                    <p>TDS (Tax Deducted at Source) involves deducting tax at the time of making certain payments like salary or interest.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
+              <a style="color: #888;" href="./services/coroprate-governance-page.html">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                  <div class="card"><img src="images/serv-2.png" alt="">
+                    <h4>Corporate Governance</h4>
+                    <p>Corporate governance ensures accountability, transparency, and fairness in a company's management and operations.</p>
+                    <a href="#"><i class="btn-icon pulse fa fa fa-arrow-right"></i></a> </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -571,8 +601,10 @@ $(function(){
         interval: 7000,
         cycle: true
     });
-	
-	
+    </script>
+    <script>
+     
+
     </script>
 </body>
 </html>

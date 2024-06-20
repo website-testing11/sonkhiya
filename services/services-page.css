@@ -12,6 +12,7 @@
     background-color: #000;
     padding: 10px;
     border-radius: 6px;
+    text-transform: uppercase;
 }
 
 .service-content{
@@ -25,6 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform:uppercase;
+    margin-bottom: 12px;
 }
 .service-content div{
     display: flex;
@@ -32,10 +35,12 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    background-color: #cccccc25;
+    padding: 12px;
 }
 .service-content h2{
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 10px;
 }
 .service-content ul{
     padding: 1rem;
