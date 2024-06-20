@@ -1,0 +1,16 @@
+.blogs-heading{
+    display: flex;
+    justify-content: center;
+    /* font-size: 3rem; */
+}
+.blogs-heading h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 400;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}

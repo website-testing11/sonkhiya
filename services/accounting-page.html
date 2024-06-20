@@ -186,5 +186,22 @@
           </div>
         </div>
     </footer>
+    <script type="text/javascript">
+      var ico = $('<span class="arow"></span>');
+      $('.navbar-collapse li:has(ul)').append(ico);
+      $('span.arow').click(function () {
+          //alert();
+          //$('nav#nav li:has(ul)').toggleClass('open');
+          //$(this).closest('ul').find('li').removeClass('open');
+          $(this).closest('ul').find('li').removeClass('open');
+          if ($(this).attr('mopen') != 'yes') {
+              $(this).attr('mopen', 'yes');
+              $(this).closest('li:has(ul)').toggleClass('open');
+          } else {
+              $(this).attr('mopen', '0');
+          }
+  
+      });
+  </script> 
 </body>
 </html>

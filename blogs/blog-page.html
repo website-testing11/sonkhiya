@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/mustyle.css">
+    <link rel="stylesheet" href="./blog-page.css">
     <script src="../js/jquery.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./services-page.css">
@@ -80,83 +81,17 @@
         </nav>
     </header>
     <!-- --------------- -->
-    <div class="head-img">
-        <h1>AUDIT</h1>
-    </div>
-    <!-- --------------- -->
-    <div class="service-content">
-        <div>
-            <div class="heading2">
-                <h2>AUDIT</h2>
-                <span>Broadly, Audit involves the following :</span>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        Indepth study of existing systems, procedures and controls for proper understanding.  Suggestions for improvement and strengthening.
-                    </li>
-                    <li>
-                        Ensuring compliance with policies, procedures and statutes.
-                    </li>
-                    <li>
-                        Comprehensive review to ensure that the accounts are prepared in accordance with Generally Accepted Accounting Policies and applicable Accounting Standards/IFRS.
-                    </li>
-                    <li>
-                        Checking the genuineness of the expenses booked in accounts.
-                    </li>
-                    <li>
-                        Reporting inefficiencies at any operational level.
-                    </li>
-                    <li>
-                        Detection and prevention of leakages of income and suggesting corrective measures to prevent recurrence. 
-                    </li>
-                    <li>
-                        Certification of the books of account being in agreement with the Balance Sheet and Profit and Loss Account.
-                    </li>
-                    <li>
-                        Issue of  Audit Reports under various laws.
-                    </li>
-                </ul>
-            </div>
-            <div class="heading2">
-                <h3>Types of Audits conducted</h3>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        Statutory Audit of Companies intended to determine if an organisation delivers an honest and accurate representation of its financial position
-                    </li>
-                    <li>
-                        Tax Audit under Section 44AB of the Income Tax Act, 1961.
-                    </li>
-                    <li>
-                        Audit under other sections of the Income Tax Act, 1961 such as 80HHC, 80-IA, etc.
-                    </li>
-                    <li>
-                        Concurrent Audits.
-                    </li>
-                    <li>
-                        Revenue Audit of Banks.
-                    </li>
-                    <li>
-                        Branch Audits of Banks.
-                    </li>
-                    <li>
-                        Audit of PF Trusts, Charitable Trusts, Schools, etc.
-                    </li>
-                    <li>
-                        Audit of Co-operative Socities.
-                    </li>
-                    <li>
-                        Information System Audit
-                    </li>
-                    <li>
-                        Internal Audits.
-                    </li>
-                </ul>
-            </div>
+    <div class="blog-section">
+        <div class="blogs-heading">
+            <h1>
+                Our Blogs
+            </h1>
+        </div>
+        <div class="blog-container">
+            
         </div>
     </div>
+    <!-- --------------- -->
     <footer class="footer">
         <div class="container">
           <div class="row">
@@ -221,22 +156,5 @@
           </div>
         </div>
     </footer>
-    <script type="text/javascript">
-      var ico = $('<span class="arow"></span>');
-      $('.navbar-collapse li:has(ul)').append(ico);
-      $('span.arow').click(function () {
-          //alert();
-          //$('nav#nav li:has(ul)').toggleClass('open');
-          //$(this).closest('ul').find('li').removeClass('open');
-          $(this).closest('ul').find('li').removeClass('open');
-          if ($(this).attr('mopen') != 'yes') {
-              $(this).attr('mopen', 'yes');
-              $(this).closest('li:has(ul)').toggleClass('open');
-          } else {
-              $(this).attr('mopen', '0');
-          }
-  
-      });
-  </script> 
 </body>
 </html>
