@@ -86,9 +86,54 @@
             <h1>
                 Our Blogs
             </h1>
+            <h2>
+              Latest Posts by <span>Nitin Gupta</span>
+            </h2>
         </div>
         <div class="blog-container">
-            
+            <div class="blog-boxes">
+              <!-- ------------------------------ -->
+              <div class="blog-box">
+                <h3>Actions & Precautions to be taken before closing of your books of accounts as on 31st March 2023</h3>
+
+                <p>
+                  Discover crucial actions and precautions to take before closing your books of accounts on 31st March 2023. Ensure compliance, financial health, and strategic planning for the years ahead. Insights provided by Nitin Gupta, a financial expert...
+                </p>
+
+                <a href="#"><button>Read More</button></a>
+              </div>
+              <!-- ------------------------------ -->
+              <div class="blog-box">
+                <h3>Introduction of UAE Corporate Tax</h3>
+
+                <p>
+                  United Arab Emirates (UAE), Ministry of Finance has introduced the UAE corporate tax vide Federal Decree Law no. 47 of 2022 on the Taxation of Corporations and Businesses with effect from 1st June 2023 providing the legislature framework for Corporate Tax on Business profit in the UAE...
+                </p>
+
+                <a href="#"><button>Read More</button></a>
+              </div>
+              <!-- ------------------------------ -->
+              <div class="blog-box">
+                <h3>Accounts & Other Records in GST</h3>
+
+                <p>
+                  The Importance of maintenance of books and records needs no emphasis. Accounts & Records are the backbone of any business. In GST Law, there is lot of emphasis placed on the books and records. It is presumed that all business entities are aware of the nature of books and records to be maintained. GST Law...
+                </p>
+
+                <a href="#"><button>Read More</button></a>
+              </div>
+              <!-- ------------------------------ -->
+              <div class="blog-box">
+                <h3>Analysis of Provisional Attachment of Property under GST</h3>
+
+                <p>
+                  Analysis of Provisional Attachment of Property under GST : Now a days it is seen that department is commonly attaching bank accounts/ property of the taxable person by invoking the powers given in section 83 of the CGST Act. Prior to amendment through Finance Act 2021, Extract of Section 83 is as below: Section 83...
+                </p>
+
+                <a href="#"><button>Read More</button></a>
+              </div>
+              <!-- ------------------------------ -->
+            </div>
         </div>
     </div>
     <!-- --------------- -->
@@ -156,5 +201,22 @@
           </div>
         </div>
     </footer>
+    <script type="text/javascript">
+      var ico = $('<span class="arow"></span>');
+      $('.navbar-collapse li:has(ul)').append(ico);
+      $('span.arow').click(function () {
+          //alert();
+          //$('nav#nav li:has(ul)').toggleClass('open');
+          //$(this).closest('ul').find('li').removeClass('open');
+          $(this).closest('ul').find('li').removeClass('open');
+          if ($(this).attr('mopen') != 'yes') {
+              $(this).attr('mopen', 'yes');
+              $(this).closest('li:has(ul)').toggleClass('open');
+          } else {
+              $(this).attr('mopen', '0');
+          }
+  
+      });
+  </script> 
 </body>
 </html>
