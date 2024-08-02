@@ -81,5 +81,31 @@
 
 /* -----------Article---------- */
 
+.article-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.content-container{
+    width: 70%;
+}
+.more-blogs-section{
+    width: 20%;
+    margin-left: 2rem;
+    /* posiion: fixed;
+    right: 0;
+    bottom: 40px; */
+}
+.article-content ul{
+    margin: 1rem 2rem;
+}
+.article-content ul li{
+    list-style:decimal;
+}
 
-
+.more-blogs-section .more-blog-box{
+    background-color: green;
+    width: 90%;
+    height: 10rem;
+    margin: 1rem;
+}
