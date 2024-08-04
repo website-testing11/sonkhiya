@@ -605,10 +605,10 @@
 	}
   
 	.responsive-container-block.bigContainer {
-	  padding-top: 10px;
-	  padding-right: 20px;
-	  padding-bottom: 10px;
-	  padding-left: 20px;
+		padding-top: 10px;
+		padding-right: 35px;
+		padding-bottom: 10px;
+		padding-left: 40px;
 	}
   
 	.explore {
@@ -625,11 +625,13 @@
 	.mainVideo {
 	  height: 260px;
 	}
-  
 	.videoContainer {
-	  height: 320px;
+        display: none;
+    }
+	.videoContainer img {
+		height: 20rem!important;
+		margin-left: 0;
 	}
-  
 	.responsive-container-block.Container.bottomContainer {
 	  padding: 0 0 0 0;
 	}
