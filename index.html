@@ -96,7 +96,7 @@ $(function(){
             <div class="links"> <a href="./aboutus.html" class="smooth-anchor btn btn-light-outline btn-hover-primary">About Us</a> </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12"> <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/05/business-growth-e1493725720290.jpg"> </div>
+        <div class="col-lg-6 col-12 slider-image"> <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/05/business-growth-e1493725720290.jpg"> </div>
       </div>
     </div>
     <div class="hero-item-2 bg-dark">
@@ -108,7 +108,7 @@ $(function(){
             <div class="links"> <a href="./aboutus.html" class="smooth-anchor btn btn-light-outline btn-hover-primary">About Us</a> </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12"> <img src="./images/trusted-accounting-1.jpg"> </div>
+        <div class="col-lg-6 col-12 slider-image"> <img src="./images/trusted-accounting-1.jpg"> </div>
       </div>
     </div>
     <div class="hero-item-2 bg-dark">
@@ -120,7 +120,7 @@ $(function(){
             <div class="links"> <a href="./aboutus.html" class="smooth-anchor btn btn-light-outline btn-hover-primary">About Us</a> </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12"> <img src="./images/tax-saving-2.jpg"> </div>
+        <div class="col-lg-6 col-12 slider-image"> <img src="./images/tax-saving-2.jpg"> </div>
       </div>
     </div>
     <div class="hero-item-2 bg-dark">
@@ -132,7 +132,7 @@ $(function(){
             <div class="links"> <a href="./aboutus.html" class="smooth-anchor btn btn-light-outline btn-hover-primary">About Us</a> </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12"> <img src="images/tax-saving-1.jpg"> </div>
+        <div class="col-lg-6 col-12 slider-image"> <img src="images/tax-saving-1.jpg"> </div>
       </div>
     </div>
     <div class="hero-item-2 bg-dark">
@@ -144,7 +144,7 @@ $(function(){
             <div class="links"> <a href="./aboutus.html" class="smooth-anchor btn btn-light-outline btn-hover-primary">About Us</a> </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12"> <img src="images/finance-1.jpg"> </div>
+        <div class="col-lg-6 col-12 slider-image"> <img src="images/finance-1.jpg"> </div>
       </div>
     </div>
   </div>
@@ -154,9 +154,16 @@ $(function(){
     <div class="row flex-column-reverse flex-lg-row">
       <div class="col-12 col-lg-6 align-self-center text">
         <h2><span class="featured"><span>Who </span></span> We Are</h2>
-        <p><strong>Chartered Accountants </strong>- Established in 1992, with over three decades of providing world class services to our clients with utmost dedication and striving for excellence. </p>
-        <p>We provide multidisciplinary expert services to meet all the requirements of our clients, with a focus on creating long term partnerships, meeting their immediate as well as long term business needs. We are empowered by a team of professionals who are technically competent, well trained, strongly motivated and committed to bringing more value to enhance our client experience, ensuring highest level of client satisfaction.</p>
-        <a href="./aboutus.html" class="mt-1 btn tpt-button"><i class="fa fa-arrow-right"></i> READ MORE</a> </div>
+
+        <p>
+          Founded in 2021, <b>Nitin Gupta</b> is chartered accountants Company providing Assurance, Taxation, Advisory and Project Consultancy Services . Revered for our professional ethos and technical expertise and a team of highly competent professionals, we provide efficacious solutions to our client's needs, running into deep engagements.
+        </p>
+
+        <p>
+          Company's prime objective is to provide quality service by maintaining high standards of professional integrity and personal relationship with them.
+        </p>
+
+        <a href="./aboutus.html" class="mt-1 btn tpt-button">READ MORE</a> </div>
       <div data-aos="zoom-in" class="col-12 col-lg-6">
         <h2 class="d-block d-sm-none"><span class="featured"><span>Who </span></span> We Are</h2>
         <div class="mt-0 mb-4 mt-lg-0">
@@ -433,18 +440,32 @@ $(function(){
         <div class="row">
           <div class="col-12 p-0">
             <div class="row form-group-margin">
-              <div class="col-12 col-md-6 m-0 p-2 input-group">
-                <input name="txtname" type="text" id="txtname" class="form-control" placeholder="Your Name" onfocus="onFocus(this);" onblur="offFocus(this);" />
-                <span id="RequiredFieldValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
-              <div class="col-12 col-md-6 m-0 p-2 input-group">
-                <input name="txtmail" type="text" id="txtmail" class="form-control" placeholder="Your Email ID" onblur="offFocus(this);" onfocus="onFocus(this);" />
-                <span id="RegularExpressionValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> <span id="RequiredFieldValidator3" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
-              <div class="col-12 m-0 p-2 input-group">
-                <textarea name="txtremark" rows="5" cols="50" id="txtremark" class="form-control" placeholder="Type Your Message.." onblur="offFocus(this);" onfocus="onFocus(this);"></textarea>
-              </div>
-              <!-- <div class="col-12 input-group m-0 p-2">
-                <input type="submit" name="btnsubmit" value="Send Message" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnsubmit&quot;, &quot;&quot;, true, &quot;a&quot;, &quot;&quot;, false, false))" id="btnsubmit" class="btn btn-send" />
-              </div> -->
+              
+              <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634">
+
+                <div style="display: flex; flex-direction: row;">
+                  <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input name="name" type="text" id="txtname" class="form-control" placeholder="Your Name" onfocus="onFocus(this);" onblur="offFocus(this);" />
+                    <span id="RequiredFieldValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
+  
+                  <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input name="email" type="text" id="txtmail" class="form-control" placeholder="Your Email ID" onblur="offFocus(this);" onfocus="onFocus(this);" />
+                    
+                    <span id="RegularExpressionValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> <span id="RequiredFieldValidator3" class="errer" style="color:Red;visibility:hidden;">*</span> 
+                  </div>
+                </div>
+
+                <div class="col-12 m-0 p-2 input-group">
+                  <textarea name="message" rows="5" cols="50" id="txtremark" class="form-control" placeholder="Type Your Message.." onblur="offFocus(this);" onfocus="onFocus(this);"></textarea>
+                </div>
+
+                <!-- <div class="col-12 input-group m-0 p-2">
+                  <input type="submit" name="btnsubmit" value="Send Message" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnsubmit&quot;, &quot;&quot;, true, &quot;a&quot;, &quot;&quot;, false, false))" id="btnsubmit" class="btn btn-send" />
+                </div> -->
+                <button style="margin: 1rem;" type="submit">Submit Form</button>
+              </form>
+
             </div>
           </div>
         </div>

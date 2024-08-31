@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/finance-1.jpg');
+    /* background-image: url('../images/finance-1.jpg'); */
 }
 .head-img h1{
     font-size: 2rem;

@@ -117,8 +117,10 @@ h1,h2,h3,h4,h5,h6 {		font-family: 'Poppins', sans-serif;	}
     position: relative;
     z-index: 2;
    
-    background-color: transparent;
+    background-color: #b1d274!important;
     border-radius: 4px;
+    color: #fff!important;
+    padding: 4px 10px!important;
    
     
     color: var(--primary-color);

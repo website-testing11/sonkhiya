@@ -24,6 +24,10 @@
     }
 }
 
+.slider-image img{
+    height: 55vh;
+}
+
 .hero-item-2{
     max-height: 60vh;
 }
