@@ -21,11 +21,76 @@
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/mustyle.css">
-    <link rel="stylesheet" href="./blog-page.css">
     <script src="../js/jquery.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./services-page.css">
     <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Light background */
+            color: #333; /* Dark text */
+        }
+        
+        .all-blog-header {
+            background-color: #fff; /* White header */
+            color: #333; /* Dark text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+        
+        .all-blog-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background for container */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+        
+        h2 {
+            color: #333; /* Dark color for headings */
+        }
+        
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .article-list li {
+            margin: 15px 0; /* Spacing between boxes */
+        }
+        
+        .article-list a {
+            display: block; /* Make the link a block element */
+            padding: 20px;
+            text-decoration: none;
+            color: #333; /* Dark text color */
+            background-color: #e0e0e0; /* Light gray background for links */
+            border-radius: 8px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+        }
+        
+        .article-list a:hover {
+            background-color: #d0d0d0; /* Slightly darker gray on hover */
+            transform: translateY(-2px); /* Lift effect */
+        }
+        @media (max-width: 600px) {
+          .all-blog-header {
+              padding: 15px; /* Less padding for mobile */
+          }
+
+          .all-blog-container {
+              padding: 15px; /* Less padding for mobile */
+          }
+
+          .article-list a {
+              padding: 15px; /* Less padding for mobile */
+              font-size: 14px; /* Smaller font size */
+          }
+        }
+    </style>
 </head>
 <body>
     <div class="whatsapp-button">
@@ -84,61 +149,26 @@
       </nav>
     </header>
     <!-- --------------- -->
-    <div class="blog-section">
-        <div class="blogs-heading">
-            <h1>
-                Our Blogs
-            </h1>
-            <!-- <h2>
-              Latest Posts by <span>Nitin Gupta</span>
-            </h2> -->
-        </div>
-        <div class="blog-container">
-            <div class="blog-boxes">
-              <!-- ------------------------------ -->
-              <div class="blog-box">
-                <h3>Actions & Precautions to be taken before closing of your books of accounts as on 31st March 2023</h3>
+    
+    <header class="all-blog-header">
+          <h1>Our Blogs</h1>
+    </header>
+    
+    <main class="container">
+          <ul class="article-list">
+              <li><a href="./article1.html">Corporate Tax and its Impact on Tech Industry</a></li>
+              <li><a href="./article2.html">Understanding Corporate Tax in the UAE</a></li>
+              <li><a href="./article3.html">Entities and Income Exempt from UAE Corporate Tax</a></li>
+              <li><a href="./article4.html">Tax Loss Relief</a></li>
+              <li><a href="./article5.html">Understanding Non-Deductible Expenses in UAE Corporate Tax</a></li>
+              <li><a href="./article6.html">Navigating Deductible Expenditures in UAE Corporate Tax</a></li>
+              <li><a href="./article7.html">Understanding Government-Controlled Entities in UAE Corporate Tax</a></li>
+              <li><a href="./article8.html">Understanding Qualifying Public Benefit Entities in UAE Corporate Tax</a></li>
+              <li><a href="./article9.html">Understanding Qualifying Investment Funds in UAE Corporate Tax</a></li>
+              <li><a href="./article10.html">Understanding Tax Loss Relief in UAE Corporate Tax</a></li>
+          </ul>
+    </main>
 
-                <p>
-                  Discover crucial actions and precautions to take before closing your books of accounts on 31st March 2023. Ensure compliance, financial health, and strategic planning for the years ahead. Insights provided by Nitin Gupta, a financial expert...
-                </p>
-
-                <a href="#"><button>Read More</button></a>
-              </div>
-              <!-- ------------------------------ -->
-              <div class="blog-box">
-                <h3>Introduction of UAE Corporate Tax</h3>
-
-                <p>
-                  United Arab Emirates (UAE), Ministry of Finance has introduced the UAE corporate tax vide Federal Decree Law no. 47 of 2022 on the Taxation of Corporations and Businesses with effect from 1st June 2023 providing the legislature framework for Corporate Tax on Business profit in the UAE...
-                </p>
-
-                <a href="#"><button>Read More</button></a>
-              </div>
-              <!-- ------------------------------ -->
-              <div class="blog-box">
-                <h3>Accounts & Other Records in GST</h3>
-
-                <p>
-                  The Importance of maintenance of books and records needs no emphasis. Accounts & Records are the backbone of any business. In GST Law, there is lot of emphasis placed on the books and records. It is presumed that all business entities are aware of the nature of books and records to be maintained. GST Law...
-                </p>
-
-                <a href="#"><button>Read More</button></a>
-              </div>
-              <!-- ------------------------------ -->
-              <div class="blog-box">
-                <h3>Analysis of Provisional Attachment of Property under GST</h3>
-
-                <p>
-                  Analysis of Provisional Attachment of Property under GST : Now a days it is seen that department is commonly attaching bank accounts/ property of the taxable person by invoking the powers given in section 83 of the CGST Act. Prior to amendment through Finance Act 2021, Extract of Section 83 is as below: Section 83...
-                </p>
-
-                <a href="#"><button>Read More</button></a>
-              </div>
-              <!-- ------------------------------ -->
-            </div>
-        </div>
-    </div>
     <!-- --------------- -->
     <footer class="footer">
       <div class="container">
