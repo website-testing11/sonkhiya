@@ -25,6 +25,64 @@
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./services-page.css">
     <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+    <style>
+        .testimonial-new {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        .testimonial-new:hover {
+            transform: scale(1.02);
+        }
+        .testimonial-content {
+            display: none;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .testimonial-content.active {
+            display: block;
+        }
+        .testimonial-content h4 {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav-buttons button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border-radius: 50px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .nav-buttons button:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .testimonial-new {
+                padding: 20px;
+            }
+            .testimonial-content {
+                font-size: 14px;
+            }
+        }
+  </style>
 </head>
 <body>
     <div class="whatsapp-button">
@@ -85,57 +143,43 @@
     <!-- --------------- -->
     <div class="feedback-section" style="background:#eef4ed82;">
       <h1>What our clients says <span>about us</span></h1>
-      <div class="feedback-sub">
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>
-                Earlier, we were not satisfied from the management of books of accounts and tax compliances. After their service, Now we are completely satisfied also we are ensured that now everything is good planned and managed efficiently due to their team expertise.
-              </p>
-            </blockquote>
-            <h3>Harendra Singh</h3>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>
-                Since last 22 years, we are involved in the business and paying taxes to the government. After the taking services from Sonkhiya Advisory first time, I got refund from the Department due to their expertise and business planning, Their services are really awesome.
-              </p>
-            </blockquote>
-            <h3>Mr. Bhawani Singh Bhati, Nagaur</h3>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>
-                I have applied for loan in the last year but it is reject by  stating that our books of A/cs are not properly prepared and having some internal weakness as per the required ratio but after taking services, now our books of accounts are properly managed and loan is also sanctioned wih their help and expertise. Nice experience after taking services and associated with them.
-              </p>
-            </blockquote>
-            <h3>Ganpat Ram, Jodhpur</h3>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>
-                We are running petrol pump earlier since last 18 years, we does not know even about the accounts how  to be managed but after taking services , We are  directly or indirectly involved in our business accounts & we have gained monetary benefits after their service.
-              </p>
-            </blockquote>
-            <h3>Deepak Tak, LAMBIYA (Pali)</h3>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>
-                My books of A/cs. & GST Litigation matters was pending. After their services. Now we are completely free from compliances & Sonkhiya Adviisory is completely looking our business in the form of Virtual CFO services and also subsidy matters.  
-              </p>
-            </blockquote>
-            <h3> Multan Ram, Merta</h3>
-          </figcaption>
-        </figure>
+      <div class="testimonial-new">
+        <div class="testimonial-content active">
+            <p>"Earlier, we were not satisfied with the management of books of accounts and tax compliances. After their service, now we are completely satisfied and ensured that everything is well planned and managed efficiently due to their team's expertise."</p>
+            <h4>- Harendra Singh</h4>
+        </div>
+        <div class="testimonial-content">
+            <p>"Since the last 22 years, we have been in business and paying taxes to the government. After taking services from Sonkhiya Advisory, for the first time, I got a refund from the Department due to their expertise and business planning. Their services are really awesome."</p>
+            <h4>- Mr. Bhawani Singh Bhati, Nagaur</h4>
+        </div>
+        <div class="testimonial-content">
+            <p>"I applied for a loan last year, but it was rejected, stating that our books of accounts were not properly prepared and had some internal weaknesses as per the required ratio. After taking services, our books of accounts are properly managed, and the loan was also sanctioned with their help and expertise. Nice experience after taking services and associating with them."</p>
+            <h4>- Ganpat Ram, Jodhpur</h4>
+        </div>
+        <div class="testimonial-content">
+            <p>"We have been running a petrol pump for the last 18 years. We did not even know how to manage accounts, but after taking services, we are now directly or indirectly involved in our business accounts & have gained monetary benefits after their service."</p>
+            <h4>- Deepak Tak, LAMBIYA (Pali)</h4>
+        </div>
+        <div class="testimonial-content">
+            <p>"My books of accounts & GST Litigation matters were pending. After their services, we are now completely free from compliances. Sonkhiya Advisory is completely handling our business in the form of Virtual CFO services and also subsidy matters."</p>
+            <h4>- Multan Ram, Merta</h4>
+        </div>
+        <div class="testimonial-content">
+          <p>"Their expert guidance helped us restructure our financial planning, leading to better compliance and efficiency. We are highly satisfied with their professional approach."</p>
+          <h4>- Rakesh Meena, Jaipur</h4>
+        </div>
+        <div class="testimonial-content">
+          <p>"Thanks to their assistance, our company successfully streamlined tax filing and saved significant costs. Their team is truly reliable and knowledgeable."</p>
+          <h4>- Anil Sharma, Udaipur</h4>
+        </div>
+        <div class="testimonial-content">
+          <p>"We faced challenges in financial audits, but with their help, everything is now in order. Their proactive ahpproach ensured smooth business operations."</p>
+          <h4>- Poonam Devi, Kota</h4>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="prevTestimonial()">&#10094; Prev</button>
+            <button onclick="nextTestimonial()">Next &#10095;</button>
+        </div>
       </div>
     </div>
 
@@ -219,22 +263,26 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
-      var ico = $('<span class="arow"></span>');
-      $('.navbar-collapse li:has(ul)').append(ico);
-      $('span.arow').click(function () {
-          //alert();
-          //$('nav#nav li:has(ul)').toggleClass('open');
-          //$(this).closest('ul').find('li').removeClass('open');
-          $(this).closest('ul').find('li').removeClass('open');
-          if ($(this).attr('mopen') != 'yes') {
-              $(this).attr('mopen', 'yes');
-              $(this).closest('li:has(ul)').toggleClass('open');
-          } else {
-              $(this).attr('mopen', '0');
-          }
-  
-      });
-  </script> 
+    <script>
+      let index = 0;
+      const testimonials = document.querySelectorAll(".testimonial-content");
+
+      function showTestimonial(n) {
+          testimonials.forEach((testimonial, i) => {
+              testimonial.classList.remove("active");
+              if (i === n) testimonial.classList.add("active");
+          });
+      }
+
+      function prevTestimonial() {
+          index = (index - 1 + testimonials.length) % testimonials.length;
+          showTestimonial(index);
+      }
+
+      function nextTestimonial() {
+          index = (index + 1) % testimonials.length;
+          showTestimonial(index);
+      }
+  </script>
 </body>
 </html>
