@@ -100,18 +100,31 @@
               <div class="row">
                 <div class="col-12 p-0">
                   <div class="row form-group-margin">
-                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                      <input name="txtname" type="text" id="txtname" class="form-control" placeholder="Your Name" onfocus="onFocus(this);" onblur="offFocus(this);" />
-                      <span id="RequiredFieldValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
-                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                      <input name="txtmail" type="text" id="txtmail" class="form-control" placeholder="Your Email ID" onblur="offFocus(this);" onfocus="onFocus(this);" />
-                      <span id="RegularExpressionValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> <span id="RequiredFieldValidator3" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
-                    <div class="col-12 m-0 p-2 input-group">
-                      <textarea name="txtremark" rows="5" cols="50" id="txtremark" class="form-control" placeholder="Type Your Message.." onblur="offFocus(this);" onfocus="onFocus(this);"></textarea>
-                    </div>
-                    <!-- <div class="col-12 input-group m-0 p-2">
-                      <input type="submit" name="btnsubmit" value="Send Message" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnsubmit&quot;, &quot;&quot;, true, &quot;a&quot;, &quot;&quot;, false, false))" id="btnsubmit" class="btn btn-send" />
-                    </div> -->
+                    <form action="https://api.web3forms.com/submit" method="post" style="width: 100%;">
+                      <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634">
+      
+                      <div style="display: flex; flex-direction: row;">
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                          <input name="name" type="text" id="txtname" class="form-control" placeholder="Your Name" onfocus="onFocus(this);" onblur="offFocus(this);" />
+                          <span id="RequiredFieldValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> </div>
+        
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                          <input name="email" type="text" id="txtmail" class="form-control" placeholder="Your Email ID" onblur="offFocus(this);" onfocus="onFocus(this);" />
+                          
+                          <span id="RegularExpressionValidator1" class="errer" style="color:Red;visibility:hidden;">*</span> <span id="RequiredFieldValidator3" class="errer" style="color:Red;visibility:hidden;">*</span> 
+                        </div>
+                      </div>
+      
+                      <div class="col-12 m-0 p-2 input-group">
+                        <textarea name="message" rows="5" cols="50" id="txtremark" class="form-control" placeholder="Type Your Message.." onblur="offFocus(this);" onfocus="onFocus(this);"></textarea>
+                      </div>
+      
+                      <!-- <div class="col-12 input-group m-0 p-2">
+                        <input type="submit" name="btnsubmit" value="Send Message" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnsubmit&quot;, &quot;&quot;, true, &quot;a&quot;, &quot;&quot;, false, false))" id="btnsubmit" class="btn btn-send" />
+                      </div> -->
+                      <button style="margin: 1rem;" type="submit">Submit Form</button>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -120,6 +133,29 @@
               <div class="contacts">
                 <h4>Get in Touch</h4>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1328234167745!2d75.7822762!3d26.8675208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5f6fe45614f%3A0xddc78f3fe82c3353!2sSonkhiya%20Enclave!5e0!3m2!1sen!2sin!4v1718860236474!5m2!1sen!2sin" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 pr-md-5 align-self-center text">
+              <div class="row intro">
+                  <h2><span class="featured">Talk</span>to Us</h2>
+                </div>
+                <div>
+                  <h4><b>Landline Number:</b> 
+                    <a href="tel:+01413530018" >
+                      +0141 3530018
+                    </a>
+                  </h4>
+
+                  <h4><b>Phone Number</b>
+                     <a href="tel:+919057959386" >
+                      +91 9057959386
+                    </a>
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
