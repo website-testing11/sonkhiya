@@ -1,7 +1,7 @@
 :root {
-    --color-primary-base: #e5f2cb;
+    --color-primary-base: #dcecbb;
     --color-primary-dark: #373836; /* Darker shade for background */
-    --color-primary-accent: #e4f2d3; /* Lighter shade for accents/highlights */
+    --color-primary-accent: #f3faea; /* Lighter shade for accents/highlights */
     --color-text-dark: #333333;
     --color-text-light: #ffffff;
     --color-background-light: #ffffff;
@@ -51,8 +51,8 @@ p { margin-bottom: 1em; }
 }
 /* --- Hero Section --- */
 .hero {
-    background-color: var(--color-primary-dark); 
-    color: var(--color-text-light);
+    background-color: var(); 
+    color: var(--color-text-dark);
     padding: 80px 0;
 }
 
@@ -78,7 +78,7 @@ p { margin-bottom: 1em; }
     flex: 1; 
 }
 .hero h1 {
-    color: var(--color-text-light);
+    color: var(--color-text-dark);
     margin-bottom: 0.4em;
     text-align: left;
 }
@@ -141,7 +141,7 @@ p { margin-bottom: 1em; }
     flex: 1;
 }
 .section-1 {
-    background-color: var(--color-background-gray);
+    background-color: var(--color-primary-accent);
 }
 .section-2 {
     background-color: var(--color-background-light); 
@@ -319,5 +319,148 @@ footer {
 
         .cfo-contact-details {
             order: 2;
+        }
+    }
+
+
+    
+
+    /* --- Benefits Section Styles (Unique Classes, Redesigned) --- */
+    .cfo-benefits-section-enhanced {
+        padding: 100px 0;
+        background-color: var(--color-background-light);
+        color: var(--color-text-dark);
+    }
+
+    .cfo-benefits-container-enhanced {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .cfo-benefits-header-enhanced {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .cfo-benefits-header-enhanced h2 {
+        font-size: 2.8em;
+        font-weight: 800;
+        color: var(--color-primary-dark);
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .cfo-benefits-intro-text-enhanced {
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+        font-size: 1.15em;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    /* --- Grid for Image and Split Benefits (Desktop View) --- */
+    .cfo-benefits-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1fr; /* Left Column | Image | Right Column */
+        gap: 40px;
+        align-items: start;
+    }
+
+    .cfo-benefits-col-left,
+    .cfo-benefits-col-right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cfo-benefits-center-image {
+        grid-column: 2;
+        align-self: start; /* Align to the top so sticky works properly */
+        justify-self: center;
+        width: 100%;
+        max-width: 380px; 
+        border-radius: 12px;
+        overflow: hidden;
+        position: sticky; /* Sticky feature for desktop scrolling */
+        top: 50px; 
+    }
+
+    .cfo-benefits-center-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .cfo-benefit-card-enhanced {
+        background-color: var(--color-background-gray);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+        border-left: 5px solid var(--color-primary-base);
+    }
+
+    .cfo-benefit-card-enhanced:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        background-color: var(--color-background-light);
+    }
+
+    .cfo-benefit-card-enhanced h3 {
+        font-size: 1.4em;
+        color: var(--color-primary-dark);
+        margin-bottom: 12px;
+    }
+
+    .cfo-benefit-card-enhanced p {
+        font-size: 1em;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    /* --- Responsive Fixes (Tablets and smaller desktops) --- */
+    @media (max-width: 992px) {
+        .cfo-benefits-section-enhanced {
+            padding: 80px 0;
+        }
+
+        .cfo-benefits-grid-layout {
+            grid-template-columns: 1fr; /* Collapse to a single column */
+            gap: 40px;
+        }
+
+        .cfo-benefits-center-image {
+            /* Adjustments for stacking */
+            order: -1; /* Place image at the very top */
+            grid-column: 1; /* Ensure it takes the full single column */
+            max-width: 100%; 
+            margin: 0 auto 30px auto;
+            position: static; /* DISABLE STICKY on mobile/tablet */
+            top: auto;
+        }
+
+        .cfo-benefits-header-enhanced h2 {
+            font-size: 2.2em;
+        }
+    }
+
+    /* --- Smaller Mobile Screens --- */
+    @media (max-width: 500px) {
+        .cfo-benefits-section-enhanced {
+            padding: 60px 0;
+        }
+        .cfo-benefits-header-enhanced h2 {
+            font-size: 1.8em;
+        }
+        .cfo-benefits-intro-text-enhanced {
+            font-size: 0.95em;
+        }
+        .cfo-benefit-card-enhanced {
+            padding: 20px;
+        }
+        .cfo-benefit-card-enhanced h3 {
+            font-size: 1.2em;
         }
     }

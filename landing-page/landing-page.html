@@ -31,10 +31,14 @@
           background-size: 100% 100%;
           background-repeat: none;
       }
+      html{
+        scroll-behavior: smooth;
+      }
     </style>
     <link rel="stylesheet" href="./landing-page.css">
 </head>
 <body>
+
     <div class="whatsapp-button">
       <a href="https://api.whatsapp.com/send?phone=9057959386"> 
         <img src="../images/whatsapp-icon.png" alt="">
@@ -48,42 +52,12 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="navbar-nav justify-content-end ml-auto">
-              <li class="dropdown"><a href="#">Home</a>
-                <ul class="dropdown-menu">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../aboutus.html">About Us</a></li>
-                  <li><a href="../experties.html">Our Experties</a></li>
-                  <li><a href="../partners.html">Our Team</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">Services</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./income-tax.html">Income Tax</a></li>
-                  <li><a href="./gst-page.html">GST</a></li>
-                  <li><a href="./audit-page.html">Audit</a></li>
-                  <li><a href="./non-residents.html">Services for Non-Residents</a></li>
-                  <li><a href="./accounting-page.html">Accounting Services</a></li>
-                  <li><a href="./payroll-page.html">Payroll</a></li>
-                  <li><a href="./outsourcing-page.html">Benifits of Outsourcing</a></li>
-                  <li><a href="./uae-corporate-tax.html">UAE Corporate Tax</a></li>
-                  <li><a href="./corporate-tax.html">Corporate Tax</a></li>
-                  <li><a href="./uae-vat.html">UAE VAT</a></li>
-                  <li><a href="./virtual-cfo.html">Virtual CFO Services</a></li>
-                </ul>
-              </li>
-              
-              <li class="dropdown"><a href="#">Reach Us</a>
-                <ul class="dropdown-menu">
-                  <li><a href="../career.html">Career</a></li>
-                  <li><a href="../contactus.html">Contact Us</a> </li>
-                </ul>
-              </li>
-    
-              <li><a href="../reviews-page.html">Client Reviews</a></li>
-    
-              <li><a href="../blogs/blog-page.html">Blog</a></li>
+              <li class="dropdown"><a href="./landing-page.html">Home</a></li>
+              <li class="dropdown"><a href="#services">Services</a></li>
+              <li class="dropdown"><a href="#benifits">Benifits</a></li>
+              <li><a href="#reviews">Client Reviews</a></li>
+              <li><a href="#contact-us-details ">Contact</a></li>
             </ul>
-    
           </div>
         </div>
         </div>
@@ -97,10 +71,23 @@
         <div class="container content-section">
             <div class="form-illustration">
                 <h2>Ready for Clarity in UAE Corporate Tax?</h2>
-                <p>Speak to a Sonkhiya Advisory expert to understand how a Virtual CFO can navigate the new tax regulations, minimize risk, and ensure your business is financially optimized for growth.</p>
-                </div>
+                <p>The financial landscape in the UAE is evolving rapidly due to the new Corporate Tax. Don't let complex compliance slow your momentum. Partner with us to secure your future. Our Virtual CFOs provide strategic planning, fiscal risk minimization, and expert compliance tailored specifically to navigate the new UAE tax regulations effectively.</p>
+                <ul style="list-style: none; padding-left: 0; margin-top: 20px; font-size: 0.95em;">
+                    <li style="margin-bottom: 12px;">✔ <b> Minimize Regulatory Risk: </b> Ensure 100% adherence to Federal Decree-Law No. 47 of 2022, proactively avoiding penalties and audit complications.</li>
+                    <li style="margin-bottom: 12px;">✔ <b>Maximize Tax Efficiency: </b> Identify every eligible deduction and optimize your structure legally to keep your taxable income as low as possible.</li>
+                    <li style="margin-bottom: 12px;">✔ <b>Gain Financial Foresight: </b> Use real-time analysis, budgeting, and forecasting tools to drive profitability and make confident, data-backed decisions.</li>
+                </ul>
+            </div>
+
+            
             <div class="form-container">
-                <form action="#" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key (MANDATORY) -->
+                    <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634">
+            
+                    <!-- Optional: Redirect to a thank you page -->
+                    <!-- <input type="hidden" name="redirect" value="YOUR_THANK_YOU_URL_HERE"> -->
+                    
                     <div class="form-group">
                         <label for="name">Your Full Name*</label>
                         <input type="text" id="name" name="name" required>
@@ -184,40 +171,60 @@
         </div>
     </section>
 
+    
+    <section id="benifits" class="cfo-benefits-section-enhanced"  style="background-color: #f3faea;">
+        <div class="cfo-benefits-container-enhanced">
+            <div class="cfo-benefits-header-enhanced">
+                <h2>Unlock Your Business's Potential with a Virtual CFO</h2>
+                <p class="cfo-benefits-intro-text-enhanced">
+                    A Virtual CFO plays an important role in today's business by providing essential financial expertise and strategic guidance without the commitment of a full-time executive. This outsourced model not only reduces costs but also brings specialized knowledge that can significantly enhance financial performance and operational efficiency, ultimately positioning the business for sustainable growth and success in a competitive market.
+                </p>
+            </div>
+    
+            <div class="cfo-benefits-grid-layout">
+                
+                <div class="cfo-benefits-col-left">
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Cost-Effective Expertise</h3>
+                        <p>Access to high-level financial expertise without the expense of a full-time CFO, making it affordable for small and medium-sized businesses.</p>
+                    </div>
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Improved Cash Flow Management</h3>
+                        <p>Enhance cash flow management practices to ensure liquidity and financial stability, helping the business meet its obligations.</p>
+                    </div>
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Risk Mitigation</h3>
+                        <p>Implement effective risk management strategies to identify, assess, and mitigate financial risks, safeguarding the business's future.</p>
+                    </div>
+                </div>
+    
+                <div class="cfo-benefits-center-image">
+                    <!-- Center Image -->
+                    <img src="../images/Benefits-Virtual-CFO.png" 
+                         alt="Financial strategy meeting" class="img-fluid">
+                </div>
+    
+                <div class="cfo-benefits-col-right">
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Strategic Financial Planning</h3>
+                        <p>Benefit from advanced financial strategies and planning to support long-term business growth and sustainability.</p>
+                    </div>
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Informed Decision-Making</h3>
+                        <p>Receive detailed financial analyses and insights, enabling better-informed business decisions that drive profitability and growth.</p>
+                    </div>
+                    <div class="cfo-benefit-card-enhanced">
+                        <h3>Flexibility and Scalability</h3>
+                        <p>Enjoy the flexibility to scale services up or down based on your business's needs, ensuring you only pay for what you need when you need it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
     <!-- ------------------------------------------------------------------ -->
 
-        <!-- <section id="funfacts" class="counter-sec section-2 odd counter funfacts">
-          <video class="full-image to-bottom grayscale" data-mask="70" playsinline autoplay muted loop>
-            <source src="../images/building1.mp4" type="video/mp4" />
-          </video>
-          <div class="container">
-            <div class="row mb-md-1 text-center">
-              <div class="col-12"> <span class="pre-title">WHAT ARE WE DOING</span>
-                <h2><span class="featured">Results</span> in Numbers</h2>
-              </div>
-            </div>
-            <div class="row text-center items">
-              <div class="col-6 col-md-6 col-lg-3 item">
-                <div data-percent="250" class="radial" id="sp"> <span></span> </div>
-                <h4>Clients Served</h4>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3 item">
-                <div data-percent="12" class="radial" id="spnew"> <span></span> </div>
-                <h4>Years of Experience</h4>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3 item">
-                <div data-percent="20" class="radial" id="spnew"> <span></span> </div>
-                <h4>Team </h4>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3 item">
-                <div data-percent="30" class="radial" id="spnew"> <span></span> </div>
-                <h4>Corporate Associations</h4>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <section class="hm-services">
+        <section id="services" class="hm-services" style="background-color: #fff;">
           <div class="overflow-holder">
             <div class="container">
               <div class="row text-center intro">
@@ -328,36 +335,6 @@
             </div>
           </div>
         </section>
-        <section class="vision-mission-sec">
-          <div class="container">
-            <div class="row justify-content-center items">
-              <div class="col-12 col-md-6 col-lg-4 item d-flex align-items-stretch ">
-                <div class="card bg-skyz">
-                  <div class="col-12">
-                    <h4 class="text-white"><i class="mr-2 fa fa-low-vision"></i>Our Vision</h4>
-                    <p class="text-white">To be the most respected and trusted professional organization devoted to delivering excellence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 item">
-                <div class="card bg-skyzgreen">
-                  <div class="col-12">
-                    <h4 class="text-white"><i class="mr-2 fa fa-rocket text-white"></i>Our Mission</h4>
-                    <p class="text-white">To deliver highest quality performance in everything we do, upholding highest levels of integrity and accountability.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-12 col-lg-4 item">
-                <div class="card bg-skyz">
-                  <div class="col-12">
-                    <h4 class="text-white"><i class="mr-2 fa fa fa-hard-of-hearing"></i>Our Values</h4>
-                    <p class="text-white">Integrity and accountability, Innovation, Credibility, Excellence, Pursuit of knowledge</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <!-- ------------------------- -->
         
@@ -383,7 +360,7 @@
         </div>
         
         <!-- ------------------------- -->
-        <div class="our-clients-section">
+        <div id="reviews" class="our-clients-section">
               <h1>Our Corporate <span>Clients</span></h1>
               <img src="../images/clients.png" alt="">
         </div>
@@ -391,8 +368,8 @@
        
         <section id="contact-us-details" class="cfo-contact-section-final">
             <div class="cfo-contact-container">
-                <div class="cfo-contact-header">
-                    <h2>Connect With Our Advisory Team</h2>
+                <div class="cfo-contact-header our-clients-section">
+                    <h1>Connect With <span>Our Advisory Team</span></h1>
                 </div>
         
                 <div class="cfo-contact-layout">
