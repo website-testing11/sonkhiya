@@ -24,11 +24,8 @@
     <script src="../js/jquery.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./services-page.css">
-    <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>.
-    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind Configuration with Custom Colors --><script>
+    <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+    <script>
         const customColors = {
             'primary-base': '#dcecbb',
             'primary-dark': '#373836',
@@ -46,9 +43,6 @@
                         'body-bg-light': customColors['light-green-bg'], // New background color
                         'text-default': '#333333',
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
                 }
             }
         }
@@ -62,22 +56,9 @@
       html{
         scroll-behavior: smooth;
       }
-
-      .accordion-content {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.4s ease-in-out;
+      .navbar-light .navbar-brand img {
+        height: 4.4rem;
       }
-      .accordion-content.open {
-          max-height: 500px; /* Large enough height to display content */
-      }
-      .chevron {
-          transition: transform 0.3s ease;
-      }
-      .chevron.rotated {
-          transform: rotate(180deg);
-      }
-      
     </style>
     <link rel="stylesheet" href="./landing-page.css">
 </head>
@@ -110,17 +91,12 @@
     </header>
 
     <!-- ------------------------------------------------------------------ -->
-
-
-    
-
-    <!-- ------------------------------------------------------------------ -->
  
-    <header class="hero">
+     <header class="hero">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Virtual CFO Services in the Context of UAE Corporate Tax</h1>
+                <h1>Tax Planning and Compliance by <span style="color: #005B3C;">VCFO</span></h1>
                 <p>
                     Virtual CFO (VCFO) services mean having an experienced Chief Financial Officer handle your company’s finances remotely — without hiring someone full-time. Using online tools and technology, a Virtual CFO gives your business the same level of financial insight, strategy, and control that large companies get from their in-house CFOs.
                 </p>
@@ -134,23 +110,23 @@
                 <a href="#contact" class="btn-primary">Optimize Your Finances Today</a>
             </div>
             <div class="form-container">
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <h2>Get a Free Consultation</h2> <!-- Added a heading for the form --><form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634">
                     <div class="form-group">
                         <label for="name">Your Full Name*</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="email">Business Email*</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="Enter your mail id">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
                     </div>
                     <div class="form-group">
                         <label for="message">Your Query (e.g., UAE Tax, Compliance)</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message" placeholder="I need assistance with..."></textarea>
                     </div>
                     <button type="submit" class="btn-primary">Submit Inquiry</button>
                 </form>
@@ -158,106 +134,112 @@
         </div>
     </header>
 
+
     <!-- ------------------------------------------------------------------ -->
 
     <div class="two-column-layout">
         
-        <!-- LEFT COLUMN: Scrollable Content -->
         <div class="content-column">
             
-            <h2>Overview of Tax Planning and Compliance by VCFO</h2>
-            
-            <p>All businesses must pay taxes in some form or another. Understanding the regulations and available reliefs is significant to remaining in compliance with relevant legislation.</p>
-            
-            <p>Services on **Tax Planning and Compliance by VCFOs** can be availed at StartupFino to get customised and hassle-free services for your company.</p>
-            
-            <p>The tax burden borne by a firm can be minimised with adequate tax planning and by finding acceptable opportunities for tax reductions. So, reach out to us today for **Tax Planning and Compliance by VCFOs**.</p>
-            
-            <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
-
-            <h2>Advantages of Tax Planning and Compliance by VCFOs in India</h2>
-            
-            <p>Given below are the advantages of tax planning and compliance by VCFO:</p>
-            
-            <ul>
-                <li>
-                    <h3>Expert Insights and Guidance for Tax Planning and Compliance by VCFOs</h3>
-                    <p>VCFOs bring specialised expertise to deal with the complexities of Indian tax laws. They offer guidance on optimising tax strategies while ensuring compliance with regulations.</p>
-                </li>
-                <li>
-                    <h3>Customised Tax Solutions</h3>
-                    <p>VCFOs customise tax planning strategies to align with the specific needs of each business. They identify opportunities for tax savings based on the unique circumstances of the company.</p>
-                </li>
-                <li>
-                    <h3>Uniform Compliance</h3>
-                    <p>VCFOs ensure that businesses adhere to the intricate tax regulations of India. They help in timely filing of returns and other tax-related documentation, reducing the risk of penalties.</p>
-                </li>
-                <li>
-                    <h3>Mitigation of Risks</h3>
-                    <p>VCFOs conduct thorough assessments to identify potential tax-related risks. They develop strategies to mitigate these risks and safeguard the business from legal complications.</p>
-                </li>
-                <li>
-                    <h3>Cost Efficiency</h3>
-                    <p>Engaging a VCFO for Tax Planning and Compliance can be more cost-effective than hiring a full-time CFO, especially for smaller businesses. VCFOs provide top-notch tax expertise without the overhead costs of a permanent executive.</p>
-                </li>
-                <li>
-                    <h3>Focus on Core Operations</h3>
-                    <p>Outsourcing tax planning and compliance to VCFOs allows business owners to focus on their core operations. It frees up valuable time and resources that can be directed towards business growth and development.</p>
-                </li>
-                <li>
-                    <h3>Strategic Financial Planning</h3>
-                    <p>VCFOs integrate tax planning into the overall financial strategy of the business. They help in aligning financial goals with tax objectives for enhanced profitability.</p>
-                </li>
-                <li>
-                    <h3>Stay Updated with Changing Regulations</h3>
-                    <p>VCFOs stay well-informed of the dynamic changes in tax laws and regulations in India. They ensure that the business remains compliant with the latest updates, reducing the risk of non-compliance.</p>
-                </li>
-                <li>
-                    <h3>Confidentiality and Expertise</h3>
-                    <p>VCFOs maintain a high level of confidentiality in handling sensitive financial information. They offer expert insights that help businesses make informed decisions regarding tax matters.</p>
-                </li>
-                <li>
-                    <h3>Long-term Value via Tax Planning and Compliance by VCFOs</h3>
-                    <p>VCFOs contribute to the long-term financial health of the business by optimising tax efficiency. Their strategic tax planning can lead to substantial savings over time, positively impacting the bottom line.</p>
-                </li>
-            </ul>
-
-            <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
-
-            <h2>What are the Tax Planning and Compliance Services Provided by our VCFOs?</h2>
-            
-            <p>StartupFino takes pride in offering premium tax advice and consultancy services, catering not only to Delhi-NCR but also spanning across India. Our core focus lies in aiding businesses to deal with the intricate realm of taxes with efficacy and ensure unwavering compliance. With our skilful **Virtual Chief Financial Officers (VCFOs) services**, we extend a diverse range of services tailored to simplify the processes of tax planning and compliance for your esteemed organisation.</p>
-
-            <h3>Guidance through the GST Landscape</h3>
-            <p>The **Goods and Services Tax (GST)** holds profound significance within India's tax framework, amalgamating diverse indirect taxes into a unified structure. Our VCFOs exhibit an expert understanding of GST nuances, equipped to explain its intricacies for your comprehensive comprehension. We cover a range of indirect taxes, encompassing service tax, VAT, entertainment tax and more. Our role extends to facilitating your seamless adherence to GST norms, ensuring your business remains aligned with regulatory mandates.</p>
-
-            <h3>Facilitating Domestic and International Taxation</h3>
-            <p>At StartupFino, we endeavour to simplify the tax landscape for your organisation. Our VCFOs offer a comprehensive suite of services encompassing various aspects of direct taxes. This includes managing day-to-day tax operations, mitigating tax-related risks, overseeing **domestic taxation** and providing expert insights on tax matters. Our comprehensive **Tax Planning and Compliance by VCFOs** consultation services are designed to enhance your financial operations while ensuring seamless compliance. For enterprises venturing into the global field, our expertise extends to **international taxation**, assuring conformity with cross-border tax regulations.</p>
-
-            <h3>Aiding in Transfer Pricing</h3>
-            <p>**Transfer pricing** stands as a key concern when dealing with transactions between interconnected entities. Our proficient tax experts and chartered accountants meticulously deal with transfer pricing regulations to ensure careful compliance. By facilitating adherence to transfer pricing rules, we help mitigate risks and ensure your business operates within the bounds of regulatory norms.</p>
-
-            <h3>Simplifying TDS Returns</h3>
-            <p>**Tax Deduction at Source (TDS)** stands as a fundamental aspect of the Indian taxation framework. Our **Tax Planning and Compliance by VCFOs** are dedicated to simplifying the complexities associated with TDS. We extend our expertise to assist individuals and entities subject to TDS regulations, elucidating requisite thresholds, obligations and implications. Timely and accurate filing of TDS returns is significant and we are committed to facilitating seamless compliance.</p>
-            
-            <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
-
-            <h2>Why Hire Startupfino for Services on Tax Planning and Compliance by VCFOs?</h2>
-            <p>Tax Planning and Compliance by VCFOs assist businesses in improving their financial performance, meeting their goals and focusing on their core competencies.</p>
-            <p>StartupFino’s expert **VCFO services on Tax Planning and Compliance** work hand in hand with your professional team to refine your financial plan in order to maximise shareholder value while meeting your growth and profit goals.</p>
-
+          <h2>Overview of Tax Planning and Compliance by VCFO</h2>
+          
+          <p>All businesses must pay taxes in some form or another. Understanding the regulations and available reliefs is significant to remaining in compliance with relevant legislation.</p>
+          
+          <p>Services on <b>Tax Planning and Compliance by VCFOs</b> can be availed at StartupFino to get customised and hassle-free services for your company.</p>
+          
+          <p>The tax burden borne by a firm can be minimised with adequate tax planning and by finding acceptable opportunities for tax reductions. So, reach out to us today for <b>Tax Planning and Compliance by VCFOs</b>.</p>
+          
+          <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
+        
+          <h2>Advantages of Tax Planning and Compliance by VCFOs in India</h2>
+          
+          <p>Given below are the advantages of tax planning and compliance by VCFO:</p>
+          
+          <ul>
+            <li>
+              <h3>Expert Insights and Guidance for Tax Planning and Compliance by VCFOs</h3>
+              <p>VCFOs bring specialised expertise to deal with the complexities of Indian tax laws. They offer guidance on optimising tax strategies while ensuring compliance with regulations.</p>
+            </li>
+            <li>
+              <h3>Customised Tax Solutions</h3>
+              <p>VCFOs customise tax planning strategies to align with the specific needs of each business. They identify opportunities for tax savings based on the unique circumstances of the company.</p>
+            </li>
+            <li>
+              <h3>Uniform Compliance</h3>
+              <p>VCFOs ensure that businesses adhere to the intricate tax regulations of India. They help in timely filing of returns and other tax-related documentation, reducing the risk of penalties.</p>
+            </li>
+            <li>
+              <h3>Mitigation of Risks</h3>
+              <p>VCFOs conduct thorough assessments to identify potential tax-related risks. They develop strategies to mitigate these risks and safeguard the business from legal complications.</p>
+            </li>
+            <li>
+              <h3>Cost Efficiency</h3>
+              <p>Engaging a VCFO for Tax Planning and Compliance can be more cost-effective than hiring a full-time CFO, especially for smaller businesses. VCFOs provide top-notch tax expertise without the overhead costs of a permanent executive.</p>
+            </li>
+            <li>
+              <h3>Focus on Core Operations</h3>
+              <p>Outsourcing tax planning and compliance to VCFOs allows business owners to focus on their core operations. It frees up valuable time and resources that can be directed towards business growth and development.</p>
+            </li>
+            <li>
+              <h3>Strategic Financial Planning</h3>
+              <p>VCFOs integrate tax planning into the overall financial strategy of the business. They help in aligning financial goals with tax objectives for enhanced profitability.</p>
+            </li>
+            <li>
+              <h3>Stay Updated with Changing Regulations</h3>
+              <p>VCFOs stay well-informed of the dynamic changes in tax laws and regulations in India. They ensure that the business remains compliant with the latest updates, reducing the risk of non-compliance.</p>
+            </li>
+            <li>
+              <h3>Confidentiality and Expertise</h3>
+              <p>VCFOs maintain a high level of confidentiality in handling sensitive financial information. They offer expert insights that help businesses make informed decisions regarding tax matters.</p>
+            </li>
+            <li>
+              <h3>Long-term Value via Tax Planning and Compliance by VCFOs</h3>
+              <p>VCFOs contribute to the long-term financial health of the business by optimising tax efficiency. Their strategic tax planning can lead to substantial savings over time, positively impacting the bottom line.</p>
+            </li>
+          </ul>
+        
+          <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
+        
+          <h2>What are the Tax Planning and Compliance Services Provided by our VCFOs?</h2>
+          
+          <p>StartupFino takes pride in offering premium tax advice and consultancy services, catering not only to Delhi-NCR but also spanning across India. Our core focus lies in aiding businesses to deal with the intricate realm of taxes with efficacy and ensure unwavering compliance. With our skilful <b>Virtual Chief Financial Officers (VCFOs) services</b>, we extend a diverse range of services tailored to simplify the processes of tax planning and compliance for your esteemed organisation.</p>
+        
+          <h3>Guidance through the GST Landscape</h3>
+          <p>The <b>Goods and Services Tax (GST)</b> holds profound significance within India's tax framework, amalgamating diverse indirect taxes into a unified structure. Our VCFOs exhibit an expert understanding of GST nuances, equipped to explain its intricacies for your comprehensive comprehension. We cover a range of indirect taxes, encompassing service tax, VAT, entertainment tax and more. Our role extends to facilitating your seamless adherence to GST norms, ensuring your business remains aligned with regulatory mandates.</p>
+        
+          <h3>Facilitating Domestic and International Taxation</h3>
+          <p>At StartupFino, we endeavour to simplify the tax landscape for your organisation. Our VCFOs offer a comprehensive suite of services encompassing various aspects of direct taxes. This includes managing day-to-day tax operations, mitigating tax-related risks, overseeing <b>domestic taxation</b> and providing expert insights on tax matters. Our comprehensive <b>Tax Planning and Compliance by VCFOs</b> consultation services are designed to enhance your financial operations while ensuring seamless compliance. For enterprises venturing into the global field, our expertise extends to <b>international taxation</b>, assuring conformity with cross-border tax regulations.</p>
+        
+          <h3>Aiding in Transfer Pricing</h3>
+          <p><b>Transfer pricing</b> stands as a key concern when dealing with transactions between interconnected entities. Our proficient tax experts and chartered accountants meticulously deal with transfer pricing regulations to ensure careful compliance. By facilitating adherence to transfer pricing rules, we help mitigate risks and ensure your business operates within the bounds of regulatory norms.</p>
+        
+          <h3>Simplifying TDS Returns</h3>
+          <p><b>Tax Deduction at Source (TDS)</b> stands as a fundamental aspect of the Indian taxation framework. Our <b>Tax Planning and Compliance by VCFOs</b> are dedicated to simplifying the complexities associated with TDS. We extend our expertise to assist individuals and entities subject to TDS regulations, elucidating requisite thresholds, obligations and implications. Timely and accurate filing of TDS returns is significant and we are committed to facilitating seamless compliance.</p>
+          
+          <hr style="border: 1px solid var(--color-primary-base); margin: 40px 0;">
+        
+          <h2>Why Hire Startupfino for Services on Tax Planning and Compliance by VCFOs?</h2>
+          <p>Tax Planning and Compliance by VCFOs assist businesses in improving their financial performance, meeting their goals and focusing on their core competencies.</p>
+          <p>StartupFino’s expert <b>VCFO services on Tax Planning and Compliance</b> work hand in hand with your professional team to refine your financial plan in order to maximise shareholder value while meeting your growth and profit goals.</p>
+        
         </div>
+        
         
         <!-- RIGHT COLUMN: Sticky Form -->
         <div class="form-column">
             <div class="sticky-form-wrapper">
                 <div class="form-card">
                     <h3>Get Your Custom Tax Plan</h3>
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Work Email" required>
-                        <input type="text" name="phone" placeholder="Phone Number" required>
-                        <button type="submit">Request Consultation</button>
+                    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Hidden Input for Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634"> 
+                        
+                        <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        <input type="email" name="email" placeholder="Work Email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        <input type="text" name="phone" placeholder="Phone Number" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        <button type="submit" style="padding: 12px; background-color: var(--color-call-to-action); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; transition: background-color 0.3s;">
+                            Request Consultation
+                        </button>
                     </form>
                 </div>
             </div>
@@ -267,8 +249,97 @@
 
     <!-- ------------------------------------------------------------------ -->
 
+
+    <section class="stages-section-padding">
+        <div class="container">
+            
+            <!-- Heading -->
+            <h2 class="section-title">
+                3 Key Stages Where VCFO Services Excel
+            </h2>
+            <p class="section-subtitle">
+                Have a look at the 3 key stages of a business where remote CFO services can yield fruitful returns for your business ventures.
+            </p>
+
+            <!-- Cards Container -->
+            <div class="cards-grid">
+                
+                <!-- 1. Idea Stage Card -->
+                <div class="card card-idea">
+                    <div class="card-header">
+                        <span class="card-number">1</span>
+                        <h3>Idea Stage</h3>
+                    </div>
+                    <p class="card-description">
+                        The approach to fundraising varies from one business to another. The idea stage focuses on securing essential seed capital and setting a lean cost structure.
+                    </p>
+                    <ul>
+                        <li><b>Finding the Right Investors:</b> Identifying suitable investors for business growth.</li>
+                        <li><b>Working Capital Finance:</b> Securing funds for daily operational needs of the business.</li>
+                        <li><b>Cost Reduction Strategies:</b> Implementing methods to reduce business expenses.</li>
+                        <li><b>Venture Capital Access:</b> Accessing funding for high-growth potential startups.</li>
+                        <li><b>Angel Investors:</b> Attracting investments from individuals who fund early-stage startups.</li>
+                        <li><b>Crowdfunding Source:</b> Raising funds through contributions from a large group of people.</li>
+                        <li><b>Pre-selling:</b> Generating revenue by selling products before production.</li>
+                        <li><b>Business Loans:</b> Obtaining loans from financial institutions or banks.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Revenue Stage Card -->
+                <div class="card card-revenue">
+                    <div class="card-header">
+                        <span class="card-number">2</span>
+                        <h3>Revenue Stage</h3>
+                    </div>
+                    <p class="card-description">
+                        Revenue forecasting is of the utmost importance for the sustainable growth of a business venture. The CFO facilitates the formation of an accounting and finance team.
+                    </p>
+                    <ul>
+                        <li><b>Mergers and Acquisitions</b></li>
+                        <li><b>Financial Planning</b></li>
+                        <li><b>Financial Analysis</b></li>
+                        <li><b>Fund Acquisition</b></li>
+                        <li><b>Monitoring of Business Liquidity</b></li>
+                        <li><b>Return on Investments</b></li>
+                        <li><b>Cost Control</b></li>
+                        <li><b>Market Research</b></li>
+                        <li><b>Sales Pipeline</b></li>
+                        <li><b>Effective Pricing Strategies</b></li>
+                    </ul>
+                </div>
+
+                <!-- 3. Growth Stage Card -->
+                <div class="card card-growth">
+                    <div class="card-header">
+                        <span class="card-number">3</span>
+                        <h3>Growth Stage</h3>
+                    </div>
+                    <p class="card-description">
+                        During this phase, the chief financial officer assists the leadership team in exploring a wide range of growth opportunities, focusing on scalability and risk management.
+                    </p>
+                    <ul>
+                        <li><b>Regular Financial Reporting</b></li>
+                        <li><b>Periodic Financial Forecasting</b></li>
+                        <li><b>Mitigating Financial Risks</b></li>
+                        <li><b>Addressing Potential Financial Threats</b></li>
+                        <li><b>Automating Repetitive Tasks</b></li>
+                        <li><b>Adopting Digital Platforms</b></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+    <!-- ------------------------------------------------------------------ -->
+
     <div class="marquee-section">
-        <h2>Trusted by Industry Leaders</h2>
+        <div id="reviews" class="our-clients-section">
+          <h1>Our Corporate <span>Clients</span></h1>
+        </div>
         
         <div class="marquee-container">
             <div id="marquee-inner" class="marquee-content">
@@ -281,7 +352,9 @@
 
     <section class="consultation-section">
         
-        <h2>Consultation By Expert</h2>
+        <div style="margin: -1.2rem 0;" id="reviews" class="our-clients-section">
+          <h1>Consultation By <span>Expert</span></h1>
+        </div>
         <p class="sub-heading">Speak to a financial expert today to learn how Tax Planning and Compliance by VCFO can help your business succeed.</p>
 
         <div class="consultation-wrapper">
@@ -290,22 +363,24 @@
             <div class="form-column">
                 <div class="form-card">
                     <h3>Get Free Consultation</h3>
-                    <form action="#" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Hidden Input for Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="caf656cc-33f7-41b5-9005-18e62a03d634"> 
                         
                         <div class="input-group">
-                            <input type="text" name="name" placeholder="Your Name*" required>
+                            <input type="text" name="name" placeholder="Your Name*" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                         </div>
                         
                         <div class="input-group">
-                            <input type="email" name="email" placeholder="Email Address*" required>
+                            <input type="email" name="email" placeholder="Email Address*" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                         </div>
-
+                    
                         <div class="input-group">
-                            <input type="tel" name="phone" placeholder="Phone Number*" required>
+                            <input type="tel" name="phone" placeholder="Phone Number*" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
                         </div>
                         
-                        <div class="select-group">
-                            <select name="state" required>
+                        <!-- <div class="select-group">
+                            <select name="state" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%;">
                                 <option value="">Select State*</option>
                                 <option value="AN">Andaman & Nicobar Islands</option>
                                 <option value="AP">Andhra Pradesh</option>
@@ -343,15 +418,17 @@
                                 <option value="UT">Uttarakhand</option>
                                 <option value="WB">West Bengal</option>
                             </select>
-                        </div>
+                        </div> -->
                         
-                        <div class="consent-checkbox">
-                            <input type="checkbox" id="whatsapp" name="whatsapp_consent">
-                            <label for="whatsapp">I agree to receive the brochure on **Whatsapp**</label>
-                        </div>
+                        <!-- <div class="consent-checkbox" style="display: flex; align-items: center; gap: 8px;">
+                            <input type="checkbox" id="whatsapp" name="whatsapp_consent" style="width: auto;">
+                            <label for="whatsapp" style="font-weight: 400; font-size: 14px; margin: 0;">I agree to receive the brochure on <b>Whatsapp</b></label>
+                        </div> -->
                         
-                        <button type="submit">Talk to an Expert</button>
-                        <a href="#" class="consult-link">Need to speak to an expert?</a>
+                        <button type="submit" style="padding: 12px; background-color: var(--color-call-to-action); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; transition: background-color 0.3s;margin-top: 1rem;">
+                            Talk to an Expert
+                        </button>
+                        <a href="https://api.whatsapp.com/send?phone=9057959386" class="consult-link" style="text-align: center; color: var(--color-call-to-action); text-decoration: none; font-size: 14px;">Need to speak to an expert? <b>Get Free Consultation</b></a>
                     </form>
                 </div>
             </div>
@@ -388,71 +465,78 @@
 
         </div>
     </section>
-    
+
     <!-- ------------------------------------------------------------------ -->
      
-    <div style="margin-top: 3.8rem;" class="container mx-auto max-w-4xl py-6 sm:py-8">
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-8 sm:mb-10 text-center border-b-4 border-brand-base pb-3">
-            Frequently Asked Questions (FAQs)
-        </h1>
-
-        <div id="accordion-container" class="space-y-4">
+    <div class="container">
             
-            <!-- Accordion Item 1 --><div class="bg-white rounded-xl shadow-lg border border-brand-base/50">
-                <button type="button" class="accordion-trigger flex justify-between items-center w-full p-4 sm:p-5 text-left font-semibold text-base sm:text-lg text-brand-dark hover:bg-brand-accent rounded-t-xl" data-target="content-1">
-                    <span class="flex-1">Why is tax planning and compliance essential for businesses under the new UAE Corporate Tax?</span>
-                    <svg class="chevron w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </h1>
+       <div id="reviews" class="our-clients-section">
+        <h1>Frequently Asked <span>Questions </span></h1>
+      </div>
+      
+        <div id="accordion-container">
+            
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-trigger" data-target="content-1">
+                    <span>Why is tax planning and compliance essential for businesses under the new UAE Corporate Tax?</span>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div id="content-1" class="accordion-content">
-                    <div class="p-4 pt-0 sm:p-5 sm:pt-0 text-brand-dark/80 text-sm sm:text-base">
+                    <div class="accordion-content-inner">
                         <p>All businesses must comply with the new UAE Corporate Tax laws. Understanding these complex regulations and available reliefs is vital to remain compliant. Adequate tax planning helps minimize your tax burden and proactively identifies opportunities for legal reductions.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Accordion Item 2 --><div class="bg-white rounded-xl shadow-lg border border-brand-base/50">
-                <button type="button" class="accordion-trigger flex justify-between items-center w-full p-4 sm:p-5 text-left font-semibold text-base sm:text-lg text-brand-dark hover:bg-brand-accent" data-target="content-2">
-                    <span class="flex-1">What specific benefits do VCFOs offer for navigating UAE Corporate Tax?</span>
-                    <svg class="chevron w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-trigger" data-target="content-2">
+                    <span>What specific benefits do VCFOs offer for navigating UAE Corporate Tax?</span>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div id="content-2" class="accordion-content">
-                    <div class="p-4 pt-0 sm:p-5 sm:pt-0 text-brand-dark/80 text-sm sm:text-base">
+                    <div class="accordion-content-inner">
                         <p>VCFOs provide expert guidance tailored to the dynamic UAE tax laws, offering solutions specific to each business's needs. They ensure compliance, mitigate fiscal risks, and seamlessly integrate tax planning into your overall financial strategy, moving beyond just compliance to true optimization.</p>
                     </div>
                 </div>
             </div>
             
-            <!-- Accordion Item 3 --><div class="bg-white rounded-xl shadow-lg border border-brand-base/50">
-                <button type="button" class="accordion-trigger flex justify-between items-center w-full p-4 sm:p-5 text-left font-semibold text-base sm:text-lg text-brand-dark hover:bg-brand-accent" data-target="content-3">
-                    <span class="flex-1">How do VCFOs ensure compliance with Federal Decree-Law No. 47 of 2022 (UAE Corporate Tax)?</span>
-                    <svg class="chevron w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-trigger" data-target="content-3">
+                    <span>How do VCFOs ensure compliance with Federal Decree-Law No. 47 of 2022 (UAE Corporate Tax)?</span>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div id="content-3" class="accordion-content">
-                    <div class="p-4 pt-0 sm:p-5 sm:pt-0 text-brand-dark/80 text-sm sm:text-base">
+                    <div class="accordion-content-inner">
                         <p>VCFOs ensure the timely and accurate filing of tax returns and all necessary documentation, significantly reducing the risk of penalties. Our experts stay constantly updated with all amendments to the tax laws to ensure your business remains 100% compliant.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Accordion Item 4 --><div class="bg-white rounded-xl shadow-lg border border-brand-base/50">
-                <button type="button" class="accordion-trigger flex justify-between items-center w-full p-4 sm:p-5 text-left font-semibold text-base sm:text-lg text-brand-dark hover:bg-brand-accent" data-target="content-4">
-                    <span class="flex-1">How does outsourcing tax planning and compliance benefit my UAE business?</span>
-                    <svg class="chevron w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-trigger" data-target="content-4">
+                    <span>How does outsourcing tax planning and compliance benefit my UAE business?</span>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div id="content-4" class="accordion-content">
-                    <div class="p-4 pt-0 sm:p-5 sm:pt-0 text-brand-dark/80 text-sm sm:text-base">
+                    <div class="accordion-content-inner">
                         <p>Outsourcing to a Virtual CFO allows business owners to free up valuable time and internal resources to focus entirely on core operations. This partnership guarantees expert insights, ensures confidentiality, and leads to more strategic financial planning and forecasting.</p>
                     </div>
                 </div>
             </div>
             
-            <!-- Accordion Item 5 --><div class="bg-white rounded-xl shadow-lg border border-brand-base/50">
-                <button type="button" class="accordion-trigger flex justify-between items-center w-full p-4 sm:p-5 text-left font-semibold text-base sm:text-lg text-brand-dark hover:bg-brand-accent rounded-b-xl" data-target="content-5">
-                    <span class="flex-1">How do VCFOs assist with Transfer Pricing and complex filing requirements under the UAE CT law?</span>
-                    <svg class="chevron w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-trigger" data-target="content-5">
+                    <span>How do VCFOs assist with Transfer Pricing and complex filing requirements under the UAE CT law?</span>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div id="content-5" class="accordion-content">
-                    <div class="p-4 pt-0 sm:p-5 sm:pt-0 text-brand-dark/80 text-sm sm:text-base">
+                    <div class="accordion-content-inner">
                         <p>Experienced VCFOs ensure detailed compliance with all Transfer Pricing rules, significantly reducing risks associated with transactions between related parties. They also manage complex documentation and filing schedules required by the Federal Tax Authority (FTA) for a seamless and accurate tax reporting cycle.</p>
                     </div>
                 </div>
@@ -465,7 +549,7 @@
 
     <!-- ------------------------------------------------------------------ -->
         
-        <div class="experties-section">
+        <!-- <div class="experties-section">
           <h1>Our <span>expertise</span></h1>
           <p>We are experts in the field of international tax, VAT, payroll and accounting</p>
         
@@ -484,62 +568,8 @@
                   <img src="../images/exp-9.png" alt="">
               </div>
           </div>
-        </div>
+        </div> -->
         
-        <!-- ------------------------- -->
-        <div id="reviews" class="our-clients-section">
-              <h1>Our Corporate <span>Clients</span></h1>
-              <img src="../images/clients.png" alt="">
-        </div>
-        <!-- ------------------------- -->
-       
-        <section id="contact-us-details" class="cfo-contact-section-final">
-            <div class="cfo-contact-container">
-                <div class="cfo-contact-header our-clients-section">
-                    <h1>Connect With <span>Our Advisory Team</span></h1>
-                </div>
-        
-                <div class="cfo-contact-layout">
-                    
-                    <div class="cfo-contact-details">
-                        
-                        <div class="cfo-detail-group">
-                            <h3>Talk to Us</h3>
-                            <div class="cfo-contact-numbers">
-                                <span> <b> Landline Number: </b> +0141 3530018</span>
-                                <span> <b> Phone Number: </b> +91 9057959386</span>
-                            </div>
-                        </div>
-        
-                        <div class="cfo-detail-group">
-                            <h3>Reach Us (Office Locations)</h3>
-                            
-                            <div class="cfo-office-location">
-                                <h4>Jaipur</h4>
-                                <p>Sonkhiya enclave 2nd floor near SBI bank triveni nagar, Jaipur, Rajasthan - 302 018</p>
-                            </div>
-        
-                            <div class="cfo-office-location">
-                                <h4>Pune</h4>
-                                <p>Sr. No. 13 Ambegaon BK Haveli Ambegaon BK Part C.N.V. Pune, Maharashtra - 411 046</p>
-                            </div>
-        
-                            <div class="cfo-office-location">
-                                <h4>Nagpur</h4>
-                                <p>Plot No. 72 Bhandara RD Babulban Nagpur, Maharashtra - 440 008</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="cfo-map-area">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7118.265634245432!2d75.782276!3d26.867521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5f6fe45614f%3A0xddc78f3fe82c3353!2sSonkhiya%20Enclave!5e0!3m2!1sen!2sin!4v1759730496516!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-        
-                </div>
-            </div>
-        </section>
-        
-
     <!-- ------------------------------------------------------------------ -->
     
 
@@ -628,7 +658,7 @@
   
       });
   </script> 
-   <script>
+      <script>
         document.querySelectorAll('.accordion-trigger').forEach(button => {
             button.addEventListener('click', () => {
                 const contentId = button.dataset.target;
@@ -640,7 +670,7 @@
                 document.querySelectorAll('.accordion-content').forEach(c => {
                     if (c.id !== contentId) {
                         c.classList.remove('open');
-                        const otherChevron = c.closest('.shadow-lg').querySelector('.chevron');
+                        const otherChevron = c.closest('.accordion-item').querySelector('.chevron');
                         if (otherChevron) otherChevron.classList.remove('rotated');
                     }
                 });
@@ -655,7 +685,7 @@
                 }
             });
         });
-  </script>
+    </script>
    <script>
         const marqueeInner = document.getElementById('marquee-inner');
         const totalLogos = 14;

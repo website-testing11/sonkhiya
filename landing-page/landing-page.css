@@ -53,7 +53,7 @@ p { margin-bottom: 1em; }
 
 .hero {
     position: relative;
-    background: linear-gradient(135deg, #f5f9f2 0%, #ecf7e2 100%);
+    background: linear-gradient( #f4fbee 0%, #daf7bf 100%);
     color: var(--color-text-dark);
     padding: 80px 0 120px;
     overflow: hidden;
@@ -126,7 +126,7 @@ p { margin-bottom: 1em; }
 }
 .form-container {
     flex: 1;
-    background-color: #eaf8d8;
+    background-color: #fafef5;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -165,352 +165,6 @@ p { margin-bottom: 1em; }
         width: 100%;
     }
 }
-/* --- Content Layout Sections (Alternating) --- */
-.content-section {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.content-block {
-    flex: 1;
-}
-.section-1 {
-    background-color: var(--color-primary-accent);
-}
-.section-2 {
-    background-color: var(--color-background-light); 
-}
-/* --- Feature Boxes/Cards --- */
-.feature-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-.feature-card {
-    padding: 20px;
-    background-color: var(--color-background-light);
-    border-left: 5px solid var(--color-primary-base); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-}
-/* --- Section 2 Specific Styling (Reversed Layout) --- */
-.section-2 .content-section {
-    flex-direction: row-reverse; 
-}
-
-.section-2 .feature-card {
-    border-left: none;
-    border-right: 5px solid var(--color-primary-base); 
-}
-/* --- Footer --- */
-footer {
-    background-color: var(--color-primary-dark); 
-    color: var(--color-text-light); 
-    text-align: center; 
-    padding: 20px 0;
-}
-/* --- Responsive Design (Mobile) --- */
-@media (max-width: 768px) {
-    h1 { font-size: 1.7em; }
-    h2 { font-size: 1.5em; }
-
-    .hero {
-       padding: 10px 0;
-       padding-bottom: 30px;
-    }
-    .hero-content {
-        padding-bottom: 10px;
-    }
-    .hero p{
-      font-size: 1rem;
-    }
-    
-    /* Stack Hero content vertically */
-    .hero .container,
-    .contact-form-section .content-section {
-        flex-direction: column; 
-        text-align: center;
-    }
-    
-    .hero-image {
-        min-height: 250px; 
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    
-    .hero h1,
-    .hero p {
-        text-align: center;
-    }
-    .form-illustration {
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-    .form-illustration h2 {
-        text-align: center;
-    }
-    
-    /* Stack alternating sections vertically */
-    .content-section,
-    .section-2 .content-section {
-        flex-direction: column; 
-    }
-    .content-block {
-        width: 100%;
-        text-align: left; 
-    }
-    .feature-list {
-        margin-top: 20px;
-    }
-}
-
-    /* --- Contact Section Styles (Unique Classes) --- */
-    .cfo-contact-section-final {
-        padding: 80px 0;
-        background-color: var(--color-background-gray);
-    }
-
-    .cfo-contact-container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .cfo-contact-header {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .cfo-contact-header h2 {
-        color: var(--color-primary-dark);
-        font-size: 2.2em;
-        font-weight: 700;
-        margin-bottom: 0.2em;
-    }
-
-    .cfo-contact-layout {
-        display: flex;
-        gap: 40px;
-        align-items: stretch;
-    }
-
-    .cfo-contact-details {
-        flex: 1; /* Takes half the space */
-        padding: 20px 0;
-    }
-
-    .cfo-map-area {
-        flex: 1; /* Takes half the space */
-        border-radius: 8px;
-        overflow: hidden; /* Ensures map adheres to border-radius */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        min-height: 400px;
-    }
-
-    .cfo-map-area iframe {
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-
-    .cfo-detail-group {
-        margin-bottom: 30px;
-    }
-
-    .cfo-detail-group h3 {
-        color: var(--color-primary-dark);
-        font-size: 1.4em;
-        border-bottom: 2px solid var(--color-primary-base);
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-    }
-
-    .cfo-office-location {
-        padding: 10px 0;
-        border-left: 3px solid var(--color-primary-base);
-        padding-left: 15px;
-        margin-bottom: 15px;
-    }
-
-    .cfo-office-location h4 {
-        color: var(--color-text-dark);
-        font-size: 1.1em;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
-
-    .cfo-office-location p {
-        font-size: 0.95em;
-        margin: 0;
-    }
-    
-    .cfo-contact-numbers span {
-        display: block;
-        font-size: 1.1em;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
-
-    /* --- Responsive Design (Mobile) --- */
-    @media (max-width: 768px) {
-        .cfo-contact-layout {
-            flex-direction: column;
-        }
-
-        .cfo-map-area {
-            min-height: 300px; /* Smaller map on mobile */
-            order: 1; /* Place map above details on mobile */
-        }
-
-        .cfo-contact-details {
-            order: 2;
-        }
-    }
-
-
-    
-
-    /* --- Benefits Section Styles (Unique Classes, Redesigned) --- */
-    .cfo-benefits-section-enhanced {
-        padding: 100px 0;
-        background-color: var(--color-background-light);
-        color: var(--color-text-dark);
-    }
-
-    .cfo-benefits-container-enhanced {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .cfo-benefits-header-enhanced {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .cfo-benefits-header-enhanced h2 {
-        font-size: 2.8em;
-        font-weight: 800;
-        color: var(--color-primary-dark);
-        margin-bottom: 15px;
-        line-height: 1.2;
-    }
-
-    .cfo-benefits-intro-text-enhanced {
-        max-width: 900px;
-        margin: 0 auto 50px auto;
-        font-size: 1.15em;
-        line-height: 1.8;
-        text-align: center;
-    }
-
-    /* --- Grid for Image and Split Benefits (Desktop View) --- */
-    .cfo-benefits-grid-layout {
-        display: grid;
-        grid-template-columns: 1fr 1.2fr 1fr; /* Left Column | Image | Right Column */
-        gap: 40px;
-        align-items: start;
-    }
-
-    .cfo-benefits-col-left,
-    .cfo-benefits-col-right {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .cfo-benefits-center-image {
-        grid-column: 2;
-        align-self: start; /* Align to the top so sticky works properly */
-        justify-self: center;
-        width: 100%;
-        max-width: 380px; 
-        border-radius: 12px;
-        overflow: hidden;
-        position: sticky; /* Sticky feature for desktop scrolling */
-        top: 50px; 
-    }
-
-    .cfo-benefits-center-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-
-    .cfo-benefit-card-enhanced {
-        background-color: var(--color-background-gray);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
-        border-left: 5px solid var(--color-primary-base);
-    }
-
-    .cfo-benefit-card-enhanced:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        background-color: var(--color-background-light);
-    }
-
-    .cfo-benefit-card-enhanced h3 {
-        font-size: 1.4em;
-        color: var(--color-primary-dark);
-        margin-bottom: 12px;
-    }
-
-    .cfo-benefit-card-enhanced p {
-        font-size: 1em;
-        line-height: 1.7;
-        margin-bottom: 0;
-    }
-
-    /* --- Responsive Fixes (Tablets and smaller desktops) --- */
-    @media (max-width: 992px) {
-        .cfo-benefits-section-enhanced {
-            padding: 80px 0;
-        }
-
-        .cfo-benefits-grid-layout {
-            grid-template-columns: 1fr; /* Collapse to a single column */
-            gap: 40px;
-        }
-
-        .cfo-benefits-center-image {
-            /* Adjustments for stacking */
-            order: -1; /* Place image at the very top */
-            grid-column: 1; /* Ensure it takes the full single column */
-            max-width: 100%; 
-            margin: 0 auto 30px auto;
-            position: static; /* DISABLE STICKY on mobile/tablet */
-            top: auto;
-        }
-
-        .cfo-benefits-header-enhanced h2 {
-            font-size: 2.2em;
-        }
-    }
-
-    /* --- Smaller Mobile Screens --- */
-    @media (max-width: 500px) {
-        .cfo-benefits-section-enhanced {
-            padding: 60px 0;
-        }
-        .cfo-benefits-header-enhanced h2 {
-            font-size: 1.8em;
-        }
-        .cfo-benefits-intro-text-enhanced {
-            font-size: 0.95em;
-        }
-        .cfo-benefit-card-enhanced {
-            padding: 20px;
-        }
-        .cfo-benefit-card-enhanced h3 {
-            font-size: 1.2em;
-        }
-    }
-
-    
 
 :root {
     --color-primary-base: #dcecbb; 
@@ -656,6 +310,11 @@ footer {
 /* --- Marquee Section Styling --- */
 .marquee-section {
     padding: 50px 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .marquee-section h2 {
     text-align: center;
@@ -666,7 +325,7 @@ footer {
 }
 /* --- Marquee Core CSS --- */
 .marquee-container {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap; /* Keep all logos on one line */
     
@@ -705,7 +364,7 @@ footer {
     display: block;
     height: 100%; 
     width: auto;
-    opacity: 0.6; /* Subtle look */
+    opacity: 0.9; /* Subtle look */
     transition: opacity 0.3s;
 }
 
@@ -749,7 +408,7 @@ footer {
 
 /* --- Consultation Section Layout --- */
 .consultation-section {
-     background: linear-gradient(135deg, #f5f7f3 0%, #f4f7f1 100%);
+    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
     padding: 80px 20px;
     text-align: center;
 }
@@ -819,7 +478,7 @@ footer {
 .item-protecting { top: 50%; left: 0; background-color: var(--color-protecting); }
 .item-compliances { top: 15%; right: 0; background-color: var(--color-compliances); }
 .item-fundraising { top: 50%; right: 0; background-color: var(--color-fundraising); }
-.item-licenses { bottom: 0; left: 50%; transform: translateX(-50%); background-color: va(--color-licenses); }
+.item-licenses { bottom: 0; left: 50%; transform: translateX(-50%); background-color: var(--color-licenses); }
 /* --- Right Column: Form --- */
 .form-column {
     flex: 1;
@@ -841,7 +500,6 @@ footer {
     text-align: center;
 }
 .input-group, .select-group {
-    margin-bottom: 20px;
     text-align: left;
 }
 .input-group label, .select-group label {
@@ -927,5 +585,397 @@ footer {
     .visual-item {
         padding: 10px 15px;
         font-size: 0.9em;
+    }
+}
+
+
+/* --- Color Variables (from your theme) --- */
+:root { 
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; 
+    --color-text-dark: #333333;
+    --color-call-to-action: #4CAF50; 
+    --color-card-light: #fefefe; /* Very light, off-white card background */
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --color-section-bg: #ffffff; /* New white background for the whole section */
+} 
+
+.stages-section-padding {
+    padding: 80px 0;
+    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
+}
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* --- Heading Styles --- */
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --- Cards Container --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- Individual Card Styling (Now includes BG texture/color) --- */
+.card {
+    background-color: var(--color-card-light);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px var(--color-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+    /* Background Texture and Gradient is now applied only to the card */
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Colored Top Border based on stage */
+.card-idea { border-top: 5px solid var(--color-call-to-action); }
+.card-revenue { border-top: 5px solid var(--color-primary-dark); }
+.card-growth { border-top: 5px solid var(--color-primary-base); }
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-number {
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 15px;
+    line-height: 1;
+}
+.card-idea .card-number { color: var(--color-call-to-action); }
+.card-revenue .card-number { color: var(--color-primary-dark); }
+.card-growth .card-number { color: var(--color-primary-base); }
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin: 0;
+}
+.card-description {
+    color: #666;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--color-text-dark);
+    font-size: 15px;
+}
+.card li::before {
+    content: "»"; /* Simple arrow marker */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-call-to-action); /* Use a dominant color for emphasis */
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .card {
+        padding: 25px;
+    }
+}
+
+:root { 
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f9fcf4; 
+    --color-text-dark: #333333;
+    --color-call-to-action: #4CAF50; 
+    --color-card-light: #fefefe; /* Very light, off-white card background */
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --color-section-bg: #ffffff; /* New white background for the whole section */
+} 
+
+.section-padding {
+    padding: 80px 0;
+    background-color: var(--color-primary-accent); /* Applied soft color to section padding area */
+}
+.container {
+    width: 96%; /* INCREASED WIDTH from 90% to 95% */
+    max-width: 1500px; /* INCREASED MAX-WIDTH for large screens */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* --- Heading Styles --- */
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --- Cards Container --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- Individual Card Styling (Now includes BG texture/color) --- */
+.card {
+    background-color: var(--color-card-light);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px var(--color-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+    /* Background Texture and Gradient is now applied only to the card */
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Colored Top Border based on stage */
+.card-idea { border-top: 5px solid var(--color-call-to-action); }
+.card-revenue { border-top: 5px solid var(--color-primary-dark); }
+.card-growth { border-top: 5px solid var(--color-primary-base); }
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-number {
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 15px;
+    line-height: 1;
+}
+.card-idea .card-number { color: var(--color-call-to-action); }
+.card-revenue .card-number { color: var(--color-primary-dark); }
+.card-growth .card-number { color: var(--color-primary-base); }
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin: 0;
+}
+.card-description {
+    color: #666;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--color-text-dark);
+    font-size: 15px;
+}
+.card li::before {
+    content: "»"; /* Simple arrow marker */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-call-to-action); /* Use a dominant color for emphasis */
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .card {
+        padding: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* --- Color Variables (from your theme) --- */
+:root { 
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; 
+    --color-text-dark: #333333; 
+    --color-text-light: #ffffff; 
+    --color-background-light: #ffffff; 
+    --color-background-gray: #f2f2f2;
+    --color-bg-subtle: #f9fdf5; /* Very light green for background */
+    --color-border-subtle: #dcecbb80; /* Primary base with opacity */
+    --color-hover: #f3faea; /* Primary accent for hover */
+} 
+/* --- Section Heading --- */
+.our-clients-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 30px;
+}
+.our-clients-section h1 span {
+    color: var(--color-call-to-action, #4CAF50); /* Assuming green accent for the span */
+}
+/* --- Accordion Styles --- */
+#accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Simulates Tailwind space-y-4 (4 * 4px) */
+    margin-bottom: 4rem;
+}
+.accordion-item {
+    background-color: var(--color-background-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-subtle);
+    overflow: hidden;
+}
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.125rem; /* base: 16px, sm: 18px */
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.accordion-trigger:hover {
+    background-color: var(--color-hover);
+}
+
+.accordion-trigger span {
+    flex: 1;
+}
+.chevron {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.chevron.rotated {
+    transform: rotate(180deg);
+}
+/* Content Panel Styles (Hidden by default) */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    border-top: 1px solid #eee;
+}
+.accordion-content.open {
+    max-height: 500px; /* Adjust as needed for content height */
+}
+.accordion-content-inner {
+    padding: 16px 20px;
+    padding-top: 0;
+    color: var(--color-primary-dark);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .accordion-trigger {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    .chevron {
+        width: 20px;
+        height: 20px;
+    }
+    .accordion-content-inner {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+        padding-top: 0;
     }
 }
