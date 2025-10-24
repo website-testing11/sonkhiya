@@ -50,65 +50,86 @@ p { margin-bottom: 1em; }
     transform: translateY(-2px);
 }
 /* --- Hero Section --- */
+
 .hero {
-    background-color: var(); 
+    position: relative;
+    background: linear-gradient(135deg, #f5f9f2 0%, #ecf7e2 100%);
     color: var(--color-text-dark);
-    padding: 80px 0;
+    padding: 80px 0 120px;
+    overflow: hidden;
 }
-
+.hero-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #ffffff;
+    border-top-left-radius: 100% 160px;
+    border-top-right-radius: 100% 160px;
+}
 .hero .container {
+    position: relative;
+    z-index: 2;
     display: flex;
-    align-items: center;
-    gap: 40px;
-    text-align: left;
-}
-
-.hero-image {
-    flex: 1; 
-    min-height: 350px; 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-    background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 .hero-content {
-    flex: 1; 
+    flex: 1.3;
 }
 .hero h1 {
-    color: var(--color-text-dark);
-    margin-bottom: 0.4em;
-    text-align: left;
+    margin-bottom: 0.6em;
+    font-size: 2.4rem;
+    line-height: 1.3;
 }
 .hero p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     margin-bottom: 25px;
+    line-height: 1.7;
 }
-
-/* --- Contact Form Section (NEW) --- */
-.contact-form-section {
-    background-color: var(--color-primary-accent); /* Lighter background for contrast */
-    padding: 80px 0;
-    color: var(--color-text-dark);
+.vpoints {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
 }
-.contact-form-section .content-section {
-    align-items: flex-start; /* Align to the top */
+.vpoints li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 1.05rem;
 }
-.form-illustration {
-    flex: 1;
-    padding-right: 20px;
+.vpoints li::before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4CAF50;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transform: translateY(2px);
 }
-.form-illustration h2 {
-    color: var(--color-primary-dark);
+.btn-primary {
+    background-color: #007b55;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #005b3c;
 }
 .form-container {
     flex: 1;
-    background-color: var(--color-background-light);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #eaf8d8;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 .form-group {
     margin-bottom: 15px;
@@ -117,19 +138,32 @@ p { margin-bottom: 1em; }
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
-    color: var(--color-primary-dark);
 }
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     font-family: 'Poppins', sans-serif;
 }
 .form-group textarea {
     resize: vertical;
     min-height: 100px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .hero-content {
+        flex: 1;
+    }
+    .form-container {
+        width: 100%;
+    }
 }
 /* --- Content Layout Sections (Alternating) --- */
 .content-section {
@@ -475,3 +509,423 @@ footer {
             font-size: 1.2em;
         }
     }
+
+    
+
+:root {
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; 
+    --color-text-dark: #333333; 
+    --color-background-light: #ffffff; 
+    --color-button-hover: #4a4b48;
+}
+
+.two-column-layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+/* --- Left Column: Scrollable Content --- */
+.content-column {
+    flex: 2; /* Takes up 2/3 of the width on large screens */
+    padding-right: 40px;
+    min-width: 0; /* Important for flex-shrink */
+}
+
+/* --- Typography and Content Styling --- */
+.content-column h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--color-primary-base);
+}
+.content-column h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    margin-top: 20px;
+}
+.content-column p {
+    margin-bottom: 20px;
+}
+.content-column ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.content-column li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 10px;
+}
+.content-column li::before {
+    content: '✓';
+    color: var(--color-primary-dark);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* --- Right Column: Sticky Form --- */
+.form-column {
+    flex: 1; /* Takes up 1/3 of the width on large screens */
+    min-width: 350px; /* Minimum width for the form */
+}
+
+.sticky-form-wrapper {
+    /* This is the key to the sticky behavior */
+    position: sticky;
+    top: 40px; /* Space from the top of the viewport */
+    align-self: flex-start; /* Ensures it starts at the top of its container */
+    padding-left: 20px;
+}
+/* --- Form Styling --- */
+.form-card {
+    background-color: var(--color-primary-accent);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-primary-base);
+}
+
+.form-card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-card input[type="text"],
+.form-card input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-primary-base);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.form-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-accent);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+    background-color: var(--color-button-hover);
+}
+/* --- Responsiveness for smaller screens --- */
+@media (max-width: 1024px) {
+    .two-column-layout {
+        flex-direction: column;
+    }
+    
+    .content-column {
+        padding-right: 0;
+    }
+    .form-column {
+        order: -1; /* Move form to the top on mobile */
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 40px;
+    }
+    .sticky-form-wrapper {
+        position: static; /* Disable sticky on smaller screens for better UX */
+        padding-left: 0;
+    }
+}
+
+
+/* --- Color Variables (from your theme) --- */
+:root {
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; /* Background color for this section */
+    --color-text-dark: #333333; 
+}
+/* --- Marquee Section Styling --- */
+.marquee-section {
+    padding: 50px 0;
+}
+.marquee-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 30px;
+}
+/* --- Marquee Core CSS --- */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Keep all logos on one line */
+    
+    /* ADDED: Cloud/Fade Effect (Gradient Mask) */
+    /* Fades out to transparent at 0-10% and 90-100% of the container width */
+    -webkit-mask-image: linear-gradient(to right, 
+        transparent 0%, 
+        black 10%, 
+        black 90%, 
+        transparent 100%);
+    mask-image: linear-gradient(to right, 
+        transparent 0%, 
+        black 10%, 
+        black 90%, 
+        transparent 100%);
+}
+.marquee-content {
+    display: inline-block;
+    /* Animation applied here */
+    animation: scrolling 60s linear infinite; /* 60s is the speed, adjust as needed */
+    /* Ensure the content is wide enough for duplication */
+    width: 200%; 
+}
+/* Stops animation on hover */
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+.logo-wrapper {
+    display: inline-block;
+    margin: 0 60px; /* Increased space between logos */
+    height: 180px; /* Increased size */
+    vertical-align: middle;
+}
+
+.logo-item {
+    display: block;
+    height: 100%; 
+    width: auto;
+    opacity: 0.6; /* Subtle look */
+    transition: opacity 0.3s;
+}
+
+.logo-item:hover {
+    opacity: 1; /* Highlight on hover */
+}
+/* Keyframes for the scrolling effect */
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    /* The animation translates the content by exactly 50% of its width 
+       (the width of the first set of 14 logos) for a seamless loop. */
+    100% { transform: translateX(-50%); } 
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .marquee-section h2 {
+        font-size: 2em;
+    }
+    .logo-wrapper {
+        margin: 0 30px;
+        height: 80px; /* Mobile size adjustment */
+    }
+}
+
+/* --- Color Variables (from your theme) --- */
+:root {
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; /* Background color for the section */
+    --color-text-dark: #333333; 
+    --color-background-light: #ffffff;
+    /* Custom Colors for the Startup Visual */
+    --color-registering: #34d399; /* Green */
+    --color-protecting: #3b82f6;  /* Blue */
+    --color-compliances: #1e3a8a; /* Dark Blue */
+    --color-fundraising: #ec4899; /* Pink */
+    --color-licenses: #f59e0b;    /* Yellow */
+}
+/* --- Global Styles --- */
+
+/* --- Consultation Section Layout --- */
+.consultation-section {
+     background: linear-gradient(135deg, #f5f7f3 0%, #f4f7f1 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+.consultation-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+.consultation-section p.sub-heading {
+    font-size: 1.1em;
+    color: var(--color-text-dark);
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+.consultation-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+/* --- Left Column: Visual --- */
+.visual-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startup-visual {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    aspect-ratio: 1 / 0.8;
+    margin-top: 40px;
+}
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border: 2px dashed var(--color-primary-dark);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.visual-item {
+    position: absolute;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--color-background-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.visual-item:hover {
+    transform: scale(1.05);
+}
+/* Positioning the Items */
+.item-registering { top: 15%; left: 0; background-color: var(--color-registering); }
+.item-protecting { top: 50%; left: 0; background-color: var(--color-protecting); }
+.item-compliances { top: 15%; right: 0; background-color: var(--color-compliances); }
+.item-fundraising { top: 50%; right: 0; background-color: var(--color-fundraising); }
+.item-licenses { bottom: 0; left: 50%; transform: translateX(-50%); background-color: va(--color-licenses); }
+/* --- Right Column: Form --- */
+.form-column {
+    flex: 1;
+}
+
+.form-card {
+    background-color: var(--color-background-light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-primary-base);
+}
+
+.form-card h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 25px;
+    text-align: center;
+}
+.input-group, .select-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.input-group label, .select-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--color-text-dark);
+}
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.consent-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.consent-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary-dark);
+}
+.consult-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form-card button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-accent);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+    background-color: var(--color-button-hover);
+}
+/* --- Responsiveness --- */
+@media (max-width: 950px) {
+    .consultation-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .visual-column, .form-column {
+        width: 100%;
+        flex: none;
+    }
+    .form-column {
+        order: -1; /* Place form above visual on mobile */
+    }
+    .startup-visual {
+        max-width: 400px;
+    }
+}
+@media (max-width: 500px) {
+     .startup-visual {
+        aspect-ratio: 1 / 1;
+    }
+    .center-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 0.9em;
+    }
+    .visual-item {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
