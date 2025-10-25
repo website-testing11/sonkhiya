@@ -175,9 +175,12 @@ p { margin-bottom: 1em; }
     --color-button-hover: #4a4b48;
 }
 
+.two-column-layout-outer {
+    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
+}
 .two-column-layout {
     display: flex;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -190,21 +193,22 @@ p { margin-bottom: 1em; }
 
 /* --- Typography and Content Styling --- */
 .content-column h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 700;
     color: var(--color-primary-dark);
-    margin-top: 30px;
-    padding-bottom: 5px;
+    margin-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 3px solid var(--color-primary-base);
 }
 .content-column h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
     color: var(--color-primary-dark);
     margin-top: 20px;
 }
 .content-column p {
     margin-bottom: 20px;
+    font-size: .95rem;
 }
 .content-column ul {
     list-style: none;
@@ -345,7 +349,7 @@ p { margin-bottom: 1em; }
 .marquee-content {
     display: inline-block;
     /* Animation applied here */
-    animation: scrolling 60s linear infinite; /* 60s is the speed, adjust as needed */
+    animation: scrolling 25s linear infinite; /* 60s is the speed, adjust as needed */
     /* Ensure the content is wide enough for duplication */
     width: 200%; 
 }
@@ -408,7 +412,6 @@ p { margin-bottom: 1em; }
 
 /* --- Consultation Section Layout --- */
 .consultation-section {
-    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
     padding: 80px 20px;
     text-align: center;
 }
@@ -603,7 +606,7 @@ p { margin-bottom: 1em; }
 
 .stages-section-padding {
     padding: 80px 0;
-    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
+    /* background: linear-gradient(#fafcf7 0%, #eafadc 100%); */
 }
 .container {
     width: 90%;
@@ -906,6 +909,9 @@ p { margin-bottom: 1em; }
     gap: 16px; /* Simulates Tailwind space-y-4 (4 * 4px) */
     margin-bottom: 4rem;
 }
+.accordion-item button {
+    border: #fff;
+}
 .accordion-item {
     background-color: var(--color-background-light);
     border-radius: 12px;
@@ -956,11 +962,11 @@ p { margin-bottom: 1em; }
     max-height: 500px; /* Adjust as needed for content height */
 }
 .accordion-content-inner {
-    padding: 16px 20px;
-    padding-top: 0;
+    padding: 12px 20px;
     color: var(--color-primary-dark);
     opacity: 0.8;
     font-size: 1rem;
+    padding-bottom: 0px;
 }
 
 /* Responsive adjustments */
