@@ -1140,3 +1140,130 @@ p { margin-bottom: 1em; }
         padding-top: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+/* --- Color Variables (Adopted from your previous theme) --- */
+:root { 
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; 
+    --color-text-dark: #333333; 
+    --color-background-light: #ffffff; 
+    --color-call-to-action: #4CAF50; /* Primary Green */
+    --color-hover: #f3faea; /* Light accent for hover */
+    --color-bg-subtle: #f9fdf5; /* Very light background */
+} 
+/* --- Global Styles --- */
+/* Responsive Container */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4rem 1rem 4rem;
+}
+/* --- Section Heading --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    margin: 0;
+}
+.section-header span {
+    color: var(--color-call-to-action); 
+}
+/* --- Accordion Styles --- */
+#accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.accordion-item {
+    background-color: var(--color-background-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-primary-base);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.accordion-item:hover {
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.accordion-trigger:hover {
+    background-color: var(--color-hover);
+}
+
+.accordion-trigger span {
+    flex: 1;
+}
+.chevron {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    stroke: var(--color-call-to-action);
+}
+.chevron.rotated {
+    transform: rotate(180deg);
+}
+/* Content Panel Styles (Hidden by default) */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    border-top: 1px solid #eee;
+}
+.accordion-content.open {
+    max-height: 500px; 
+}
+.accordion-content-inner {
+    padding: 16px 20px;
+    color: var(--color-text-dark);
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .section-header h1 {
+        font-size: 2rem;
+    }
+    .accordion-trigger {
+        font-size: 1rem;
+        padding: 14px 15px;
+    }
+    .chevron {
+        width: 20px;
+        height: 20px;
+    }
+    .accordion-content-inner {
+        font-size: 0.95rem;
+        padding: 14px 15px;
+    }
+}
