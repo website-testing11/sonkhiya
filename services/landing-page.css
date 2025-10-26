@@ -177,6 +177,7 @@ p { margin-bottom: 1em; }
 
 .two-column-layout-outer {
     background: linear-gradient(#fafcf7 0%, #eafadc 100%);
+    padding-top: 1.4rem;
 }
 .two-column-layout {
     display: flex;
@@ -228,6 +229,160 @@ p { margin-bottom: 1em; }
     position: absolute;
     left: 0;
     top: 0;
+}
+
+
+/* --- Global Reset and Font Adjustments --- */
+.content-column {
+    /* Set a medium-to-smaller base font size for the column */
+    font-size: 15px; /* Adjust from standard 16px down to 15px */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* --- Green Theme Headings and Accents --- */
+.content-column h2 {
+    /* Primary section titles - Using a deep, professional green */
+    color: #006400; /* Dark Green */
+    border-bottom: 2px solid #3CB371; /* Medium Sea Green for accent */
+    padding-bottom: 10px;
+    margin-top: 35px; /* Increased top margin for clear separation */
+    margin-bottom: 20px;
+    font-size: 1.7em; /* Slightly smaller primary heading */
+    font-weight: 700;
+}
+
+.content-column h3 {
+    /* Sub-section titles */
+    color: #0e3e0e; /* Forest Green */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.content-column h4 {
+    /* Titles for smaller segments like "For Start-ups" */
+    color: #6c757d;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1em; /* Smaller size */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Highlighted text (bold tags) */
+.content-column b {
+    color: #006400; /* Dark Green highlight */
+    font-weight: 700;
+}
+
+/* --- List Styling Fix (Addressing merging/spacing) --- */
+
+/* General list styling - Fixing the merge issue by adding space */
+.content-column ul, 
+.content-column ol {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 25px; 
+}
+
+.content-column li {
+    margin-bottom: 15px; /* Increased bottom margin for better separation */
+    /* Ensure the list marker has space from the text */
+    padding-left: 5px; 
+}
+
+/* Default Bullet Points (Unordered List) */
+.content-column ul {
+    list-style-type: disc;
+}
+
+/* Styling for the benefits list (which uses <li> with nested <h3> and <p>) */
+.content-column ul li {
+    list-style-type: none; /* Removing the outer list marker for the complex list structure */
+    position: relative;
+    padding-left: 25px; /* Space for a custom bullet */
+}
+
+/* Custom bullet point for the complex unordered list */
+.content-column ul li::before {
+    content: "•"; /* Custom bullet character */
+    color: #3CB371; /* Green bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.content-column ul li h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em; /* Smaller font for list items */
+    color: #343a40; 
+}
+
+.content-column ul li p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 5px; 
+    font-size: 0.9em; /* Smallest font for descriptive text */
+}
+
+/* Enhanced Ordered List (Functions) */
+.content-column ol {
+    list-style-type: none; 
+    counter-reset: vcfofunction; 
+}
+
+.content-column ol li {
+    counter-increment: vcfofunction; 
+    padding-left: 15px;
+    margin-left: 5px;
+    font-weight: 500;
+    /* Resetting bottom margin to avoid double spacing with the internal margin-bottom */
+    margin-bottom: 15px; 
+}
+
+.content-column ol li::before {
+    /* Custom circle number for the ordered list */
+    content: counter(vcfofunction);
+    color: white;
+    background-color: #006400a7; /* Dark Green circle background */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: -32px; 
+}
+
+
+/* --- Horizontal Rule (HR) Styling --- */
+.content-column hr {
+    height: 1px;
+    border: none;
+    margin: 30px 0;
+    background-color: #e9ecef; /* Very light gray separator */
+}
+
+/* Targeting the specific HR with inline style to maintain its color if defined, now green */
+.content-column hr[style*="var(--color-primary-base)"] {
+    /* Assuming --color-primary-base is defined/intended to be the accent color */
+    border-color: #3CB371 !important; 
+    height: 2px;
 }
 /* --- Right Column: Sticky Form --- */
 .form-column {
