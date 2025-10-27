@@ -1165,7 +1165,6 @@ p { margin-bottom: 1em; }
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 4rem 1rem 4rem;
 }
 /* --- Section Heading --- */
 .section-header {
