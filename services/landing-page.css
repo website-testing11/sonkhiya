@@ -50,12 +50,27 @@ p { margin-bottom: 1em; }
     transform: translateY(-2px);
 }
 /* --- Hero Section --- */
+:root {
+    /* Define color variables, keeping your originals */
+    --color-primary-base: #dcecbb; 
+    --color-primary-dark: #373836; 
+    --color-primary-accent: #f3faea; 
+    --color-text-dark: #333333; 
+    --color-background-light: #ffffff; 
+    --color-button-hover: #4a4b48;
+    --color-cta-dark-green: #005B3C; /* Used for headlines and accents */
+    --color-cta-base-green: #027c55; /* Used for buttons */
+}
 
+/* * --- HERO SECTION ---
+ */
 .hero {
     position: relative;
-    background: linear-gradient( #f4fbee 0%, #daf7bf 100%);
+    /* Main background gradient is a nice, subtle green/white */
+    background: linear-gradient(#f4fbee 0%, #daf7bf 100%);
     color: var(--color-text-dark);
-    padding: 80px 0 120px;
+    /* Increased vertical padding for more space, especially at the bottom for the wave */
+    padding: 10px 0 160px;
     overflow: hidden;
 }
 .hero-bg {
@@ -63,16 +78,19 @@ p { margin-bottom: 1em; }
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: #ffffff;
-    border-top-left-radius: 100% 160px;
-    border-top-right-radius: 100% 160px;
+    /* Increased height for a smoother, more dramatic wave */
+    height: 160px;
+    background: var(--color-background-light);
+    /* Stronger, smoother curvature for the wave effect */
+    border-top-left-radius: 100% 200px;
+    border-top-right-radius: 100% 200px;
 }
 .hero .container {
     position: relative;
     z-index: 2;
     display: flex;
-    align-items: flex-start;
+    /* Vertically center the content and the form for better balance */
+    align-items: center; 
     gap: 60px;
     max-width: 1450px;
     margin: 0 auto;
@@ -81,16 +99,21 @@ p { margin-bottom: 1em; }
 .hero-content {
     flex: 1.3;
 }
+/* Main Heading: Larger and Bolder for impact */
 .hero h1 {
     margin-bottom: 0.6em;
-    font-size: 2.4rem;
-    line-height: 1.3;
+    font-size: 3.4rem; /* Significantly increased size */
+    line-height: 1.2; 
+    font-weight: 800; /* Bolder font weight */
 }
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 25px;
     line-height: 1.7;
 }
+
+/* * --- VPOINTS LIST ---
+ */
 .vpoints {
     list-style: none;
     padding-left: 0;
@@ -99,45 +122,75 @@ p { margin-bottom: 1em; }
 .vpoints li {
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 15px; /* Increased margin for better separation */
     line-height: 1.6;
-    font-size: 1.05rem;
+    font-size: .96rem;
+}
+.vpoints li strong {
+    font-weight: 600; /* Defined font-weight for list highlights */
 }
 .vpoints li::before {
-    content: "➜";
+    content: "\f00c"; /* FontAwesome checkmark */
+    font-family: FontAwesome;
+    display: inline-block;
     position: absolute;
-    left: 0;
-    top: 0;
-    color: #4CAF50;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transform: translateY(2px);
-}
-.btn-primary {
-    background-color: #007b55;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    font-size: 12px;
+    left: 0px;
+    top: 5px;
+    border-radius: 50%; /* Perfect circle */
+    background: var(--color-cta-base-green); /* Matched to button's primary color */
     color: #fff;
-    padding: 12px 26px;
-    border-radius: 6px;
+    padding-top: 1px;
+    /* Subtle shadow for a professional lift effect */
+    box-shadow: 0 0 8px rgba(2, 124, 85, 0.4); 
+}
+
+/* * --- BUTTONS & FORM ---
+ */
+.btn-primary {
+    /* Updated gradient for the primary CTA */
+    background: linear-gradient(45deg, var(--color-cta-base-green), #04d693);
+    color: #fff;
+    padding: 14px 30px; /* Slightly more generous padding */
+    border-radius: 8px; /* Slightly larger border-radius */
     text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: 600; /* Bolder text for CTA */
+    display: inline-block;
+    border: none; 
+    cursor: pointer;
 }
 .btn-primary:hover {
-    background-color: #005b3c;
+    /* More polished hover state */
+    background: linear-gradient(45deg, var(--color-cta-dark-green), #02A86E);
+    box-shadow: 0 4px 10px rgba(2, 124, 85, 0.3);
 }
+
 .form-container {
     flex: 1;
     background-color: #fafef5;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    /* Stronger box-shadow to make the form stand out */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px; /* Added spacing below the form header */
+    font-size: 1.8rem;
+    color: var(--color-cta-dark-green);
+}
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased spacing */
 }
 .form-group label {
     display: block;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 8px; /* Increased spacing */
 }
 .form-group input,
 .form-group textarea {
@@ -145,11 +198,60 @@ p { margin-bottom: 1em; }
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-family: 'Poppins', sans-serif;
+    font-family: inherit; /* Inherit the main font stack */
+    transition: border-color 0.3s, box-shadow 0.3s; 
 }
-.form-group textarea {
-    resize: vertical;
-    min-height: 100px;
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-cta-base-green); /* Branded focus color */
+    box-shadow: 0 0 0 3px rgba(2, 124, 85, 0.2);
+}
+.form-submit-btn {
+    width: 100%;
+    margin-top: 10px;
+    /* Uses the primary button style */
+}
+.form-privacy-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .hero-content {
+        flex: 1;
+    }
+    .form-container {
+        width: 100%;
+    }
+    /* Reduce heading size on smaller screens */
+    .hero h1 {
+        font-size: 2.8rem; 
+    }
+}
+
+/* Retain the original general layout styles */
+.two-column-layout-outer {
+    background: linear-gradient(#fafcf7 0%, #eafadc 100%);
+    padding-top: 1.4rem;
+}
+.two-column-layout {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.content-column {
+    flex: 2;
+    padding-right: 40px;
+    min-width: 0;
 }
 
 /* --- Responsive --- */
@@ -568,6 +670,7 @@ p { margin-bottom: 1em; }
 /* --- Consultation Section Layout --- */
 .consultation-section {
     padding: 80px 20px;
+    padding-top: 20px;
     text-align: center;
 }
 .consultation-section h2 {
