@@ -596,7 +596,7 @@ p { margin-bottom: 1em; }
         black 10%, 
         black 90%, 
         transparent 100%);
-    mask-image: linear-gradient(to right, 
+        mask-image: linear-gradient(to right, 
         transparent 0%, 
         black 10%, 
         black 90%, 
@@ -605,7 +605,7 @@ p { margin-bottom: 1em; }
 .marquee-content {
     display: inline-block;
     /* Animation applied here */
-    animation: scrolling 25s linear infinite; /* 60s is the speed, adjust as needed */
+    animation: scrolling 15s linear infinite; /* 60s is the speed, adjust as needed */
     /* Ensure the content is wide enough for duplication */
     width: 200%; 
 }
@@ -624,13 +624,10 @@ p { margin-bottom: 1em; }
     display: block;
     height: 100%; 
     width: auto;
-    opacity: 0.9; /* Subtle look */
+    opacity: 1;
     transition: opacity 0.3s;
 }
 
-.logo-item:hover {
-    opacity: 1; /* Highlight on hover */
-}
 /* Keyframes for the scrolling effect */
 @keyframes scrolling {
     0% { transform: translateX(0); }
@@ -645,8 +642,8 @@ p { margin-bottom: 1em; }
         font-size: 2em;
     }
     .logo-wrapper {
-        margin: 0 30px;
-        height: 80px; /* Mobile size adjustment */
+        margin: 0 10px;
+        height: 160px; /* Mobile size adjustment */
     }
 }
 
